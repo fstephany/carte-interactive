@@ -2,8 +2,6 @@ package com.micsc15.xpark.activities;
 
 import android.os.Bundle;
 
-import com.facebook.FacebookSdk;
-
 public class SplashActivity extends BaseActivity {
 
     // -------------- Objects, Variables -------------- //
@@ -35,9 +33,6 @@ public class SplashActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // setup Facebook SDK
-        FacebookSdk.sdkInitialize(getApplicationContext());
 
     }
 
