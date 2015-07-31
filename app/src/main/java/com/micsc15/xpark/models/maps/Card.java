@@ -1,7 +1,24 @@
 package com.micsc15.xpark.models.maps;
 
-/**
- * Created by Matthieu on 31-07-15.
- */
 public class Card {
+    // -------------- Objects, Variables -------------- //
+
+    // ------------------ Properties ------------------ //
+
+    public String Name;
+    public String description;
+    public String Url;
+
+    // ------------------ Constructor ----------------- //
+
+
+    // --------------- Public Methods ----------------- //
+
+
+    // --------------- Private Methods ---------------- //
+
+
+    // ----------------- Miscellaneous ---------------- //
+
+
 }
