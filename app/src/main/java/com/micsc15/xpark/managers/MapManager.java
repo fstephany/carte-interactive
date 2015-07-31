@@ -21,15 +21,10 @@ public class MapManager {
 
     private static ArrayList<Pin> GetAttractionsPin(){
         ArrayList<Pin> pins = new ArrayList<Pin>();
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "https://openclipart.org/image/800px/svg_to_png/169839/map-pin.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "https://openclipart.org/image/800px/svg_to_png/169839/map-pin.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "https://openclipart.org/image/800px/svg_to_png/169839/map-pin.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "https://openclipart.org/image/800px/svg_to_png/169839/map-pin.png", 12.12,12.12));
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 12.12,12.12));
+        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 50.5856025,3.8831239));
+        pins.add(new Pin(UUID.randomUUID(), "https://openclipart.org/image/800px/svg_to_png/169839/map-pin.png", 50.583661,3.8879358));
+        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 50.5856025,3.8831239));
+        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 50.583661,3.8879358));
 
         return pins;
     }
