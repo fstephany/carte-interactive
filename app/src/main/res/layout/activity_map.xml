@@ -9,7 +9,7 @@
         android:id="@+id/mapview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        mapbox:accessToken="Your Mapbox Access Token"
-        mapbox:mapid="Your MapBox mapid"/>
+        mapbox:accessToken="pk.eyJ1IjoidXhtYXN0ZXIiLCJhIjoiMGNiMTFhNDBlYzkwOGI5ZWEwYmM2YWUzZmEyMDQ3ZWEifQ.mDGvbv6QR9W2fsUhHHkwSw"
+        mapbox:mapid="uxmaster.n22g8hgj"/>
 
 </RelativeLayout>
