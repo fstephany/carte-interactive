@@ -10,7 +10,7 @@ public class SampleModel {
 
     // ------------------ Constructor ----------------- //
 
-    
+
     // --------------- Public Methods ----------------- //
 
 
