@@ -1,20 +1,11 @@
 package com.micsc15.xpark.activities;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 public class SplashActivity extends BaseActivity {
 
     // -------------- Objects, Variables -------------- //
-
-
-    // ------------------ Properties ------------------ //
-
-
-    // ------------------ Constructor ----------------- //
-
-
-    // ------------------- Methods -------------------- //
-
-
-    // ------------ Gestion de la DataBase ------------ //
 
 
     // --------------------- Views -------------------- //
@@ -22,13 +13,14 @@ public class SplashActivity extends BaseActivity {
 
     // ------------------ LifeCycle ------------------- //
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        startActivity(new Intent(SplashActivity.this, MapActivity.class));
+        finish();
+    }
 
-    // ----------------- GUI Adapter ------------------ //
 
-
-    // ------------------ Listeners ------------------- //
-
-
-    // -------------------- Divers -------------------- //
+    // ----------------- Miscellaneous ---------------- //
 
 }

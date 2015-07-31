@@ -17,6 +17,9 @@ public class MapActivity extends BaseActivity {
     // ----------------- GUI Adapter ------------------ //
 
 
+    // -------------------- Menu ---------------------- //
+
+
     // ----------------- Miscellaneous ---------------- //
 
 }
