@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.micsc15.xpark.R;
-import com.micsc15.xpark.dataaccess.facebook.FacebookDataProvider;
+import com.micsc15.xpark.managers.NewsManager;
 
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class NewsActivity extends BaseActivity {
 
     // -------------- Objects, Variables -------------- //
 
-    private FacebookDataProvider _facebookDataProvider;
+    private NewsManager _newsManager;
 
     // --------------------- Views -------------------- //
 
@@ -40,7 +40,8 @@ public class NewsActivity extends BaseActivity {
         etResponse = (EditText) findViewById(R.id.etResponse);
         tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
 
-        _facebookDataProvider = new FacebookDataProvider("181634965236091", "1609620349288580", "1b976e80112874b7b1b96ba8df19fa5d");
+        // init members
+        _newsManager = new NewsManager(getBaseContext());
 
         // check if you are connected or not
         if (isConnected()) {
@@ -48,7 +49,7 @@ public class NewsActivity extends BaseActivity {
             tvIsConnected.setText("You are connected");
 
             // call AsyncTask to perform network operation on separate thread
-            new FacebookAsyncTask().execute();
+            new NewsAsyncTask().execute();
         } else {
             tvIsConnected.setText("You are NOT connected");
         }
@@ -70,12 +71,12 @@ public class NewsActivity extends BaseActivity {
         }
     }
 
-    private class FacebookAsyncTask extends AsyncTask<Void, String, String> {
+    private class NewsAsyncTask extends AsyncTask<Void, String, String> {
 
         @Override
         protected String doInBackground(Void... params) {
             try {
-                return _facebookDataProvider.Load();
+                return _newsManager.Load();
             } catch (IOException e) {
                 return "Unable to retrieve web page. URL may be invalid.";
             }
