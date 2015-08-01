@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
+import com.mapbox.mapboxsdk.geometry.BoundingBox;
+import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.overlay.Icon;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
@@ -26,8 +27,8 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
     private MapView mapView;
 
-    private FloatingActionsMenu fam;
-    private FloatingActionButton fabA, fabB;
+    private FloatingActionsMenu floatingActionsMenu;
+    private FloatingActionButton fab_FilterAll, fab_FilterNews2015, fab_FilterEat, fab_FilterAnimationsAndFeed;
 
 
     // ------------------ LifeCycle ------------------- //
@@ -40,16 +41,20 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.setCenter(PairiDaizaManager.iLatLng);
         mapView.setZoom(18);
+        mapView.setScrollableAreaLimit(new BoundingBox(new LatLng(50.588746, 3.896243), new LatLng(50.580461, 3.879834)));
+
+        fab_FilterAll = (FloatingActionButton) findViewById(R.id.fab_FilterAll);
+        fab_FilterAll.setOnClickListener(this);
+        fab_FilterNews2015 = (FloatingActionButton) findViewById(R.id.fab_FilterNews2015);
+        fab_FilterNews2015.setOnClickListener(this);
+        fab_FilterEat = (FloatingActionButton) findViewById(R.id.fab_FilterEat);
+        fab_FilterEat.setOnClickListener(this);
+        fab_FilterAnimationsAndFeed = (FloatingActionButton) findViewById(R.id.fab_FilterAnimationsAndFeed);
+        fab_FilterAnimationsAndFeed.setOnClickListener(this);
+
+        floatingActionsMenu = (FloatingActionsMenu) findViewById(R.id.floatingActionsMenu);
 
         drawMarkers();
-
-        fabA = (FloatingActionButton) findViewById(R.id.fab_FilterAll);
-        fabA.setOnClickListener(this);
-
-        fabB = (FloatingActionButton) findViewById(R.id.fab_FilterAll);
-        fabB.setOnClickListener(this);
-
-        fam = (FloatingActionsMenu) findViewById(R.id.multiple_actions);
     }
 
 
@@ -57,16 +62,19 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v == fabA)
-            Toast.makeText(getBaseContext(), "jiojioji", Toast.LENGTH_LONG).show();
+        if (v == fab_FilterAll) {
+            drawMarkers();
+        }
 
-        fam.collapse();
+        floatingActionsMenu.collapse();
     }
 
 
     // ------------------- Methods -------------------- //
 
     private void drawMarkers() {
+        mapView.clear();
+
         for (ParkAttraction attraction : MapManager.GetMapPins(getBaseContext())) {
             CustomMarker marker = new CustomMarker(mapView, attraction);
             marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
