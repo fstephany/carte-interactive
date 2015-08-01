@@ -70,7 +70,7 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
         else if (v == fab_FilterEat)
             drawMarkers(AttractionType.RESTAURANT);
         else if ( v == fab_FilterNews2015)
-            drawMarkers(null);
+            drawMarkers(AttractionType.NEWATTRACTION);
 
         floatingActionsMenu.collapse();
     }
