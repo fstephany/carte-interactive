@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:mapbox="http://schemas.android.com/apk/res-auto"
                 xmlns:fab="http://schemas.android.com/apk/res-auto"
+                xmlns:mapbox="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -11,41 +11,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         mapbox:accessToken="pk.eyJ1IjoidXhtYXN0ZXIiLCJhIjoiMGNiMTFhNDBlYzkwOGI5ZWEwYmM2YWUzZmEyMDQ3ZWEifQ.mDGvbv6QR9W2fsUhHHkwSw"
-        mapbox:mapid="uxmaster.bf6cd864" />
+        mapbox:mapid="uxmaster.bf6cd864"/>
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/multiple_actions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        fab:fab_icon="@drawable/ic_fab_star"
-
         android:layout_alignParentLeft="true"
-        fab:fab_addButtonColorNormal="@color/white"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
-        fab:fab_labelStyle="@style/menu_labels_style"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp" >
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="14dp"
+        fab:fab_addButtonColorNormal="@color/colorPrimary"
+        fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/menu_labels_style">
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_a"
+            android:id="@+id/fab_FilterAll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="@color/pink"
+            fab:fab_colorPressed="@color/white_pressed"
             fab:fab_icon="@drawable/ic_fab_star"
-
-            fab:fab_title="Action A"
-            fab:fab_colorPressed="@color/white_pressed"/>
+            fab:fab_title="Tout montrer"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_b"
+            android:id="@+id/fab_FilterNews2015"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="@color/pink"
-            fab:fab_title="Blablabla"
-            fab:fab_colorPressed="@color/white_pressed"/>
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_fab_star"
+            fab:fab_title="Nouveautés 2015"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_FilterEat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/pink"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_fab_star"
+            fab:fab_title="Manger et boire"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_FilterAnimationsAndFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/pink"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_fab_star"
+            fab:fab_title="Animations et nourrissage"/>
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 

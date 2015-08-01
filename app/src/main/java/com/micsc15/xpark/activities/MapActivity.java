@@ -9,14 +9,12 @@ import android.widget.Toast;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
-import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.overlay.Icon;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.activities.helpers.CustomMarker;
 import com.micsc15.xpark.managers.MapManager;
 import com.micsc15.xpark.managers.PairiDaizaManager;
-import com.micsc15.xpark.models.ParkArea;
 import com.micsc15.xpark.models.ParkAttraction;
 
 public class MapActivity extends BaseActivity implements View.OnClickListener {
@@ -45,10 +43,10 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
         drawMarkers();
 
-        fabA = (FloatingActionButton) findViewById(R.id.action_a);
+        fabA = (FloatingActionButton) findViewById(R.id.fab_FilterAll);
         fabA.setOnClickListener(this);
 
-        fabB = (FloatingActionButton) findViewById(R.id.action_b);
+        fabB = (FloatingActionButton) findViewById(R.id.fab_FilterAll);
         fabB.setOnClickListener(this);
 
         fam = (FloatingActionsMenu) findViewById(R.id.multiple_actions);
@@ -68,10 +66,10 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
     // ------------------- Methods -------------------- //
 
-    private void drawMarkers(){
-        for (ParkAttraction attraction : MapManager.GetMapPins(getBaseContext())){
-            Marker marker = new Marker(mapView, "title", "description", new LatLng(attraction.Latitude, attraction.Longitude));
-             marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
+    private void drawMarkers() {
+        for (ParkAttraction attraction : MapManager.GetMapPins(getBaseContext())) {
+            CustomMarker marker = new CustomMarker(mapView, attraction);
+            marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
             mapView.addMarker(marker);
         }
     }
