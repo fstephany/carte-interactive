@@ -1,15 +1,23 @@
-package com.micsc15.xpark.models.maps;
+package com.micsc15.xpark.models;
 
-public class Card {
+import java.util.ArrayList;
+import java.util.UUID;
+
+public class ParkArea {
+
     // -------------- Objects, Variables -------------- //
 
     // ------------------ Properties ------------------ //
 
     public String Name;
-    public String description;
-    public String Url;
+    public UUID AreaID;
+    public ArrayList<ParkAttraction> Attractions;
 
     // ------------------ Constructor ----------------- //
+
+    public ParkArea(){
+        Attractions = new ArrayList<ParkAttraction>();
+    }
 
 
     // --------------- Public Methods ----------------- //
@@ -19,6 +27,4 @@ public class Card {
 
 
     // ----------------- Miscellaneous ---------------- //
-
-
 }

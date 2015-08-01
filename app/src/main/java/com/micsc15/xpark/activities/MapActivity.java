@@ -13,7 +13,8 @@ import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.managers.MapManager;
 import com.micsc15.xpark.managers.PairiDaizaManager;
-import com.micsc15.xpark.models.maps.Pin;
+import com.micsc15.xpark.models.ParkArea;
+import com.micsc15.xpark.models.ParkAttraction;
 
 public class MapActivity extends BaseActivity {
 
@@ -46,18 +47,13 @@ public class MapActivity extends BaseActivity {
     // ------------------- Methods -------------------- //
 
     private void drawMarkers(){
-        for (Pin pin : MapManager.GetMapPins()){
-            Marker marker = new Marker(mapView, "title", "description", new LatLng(pin.Latitude, pin.Longitude));
+        for (ParkAttraction attraction : MapManager.GetMapPins(getBaseContext())){
+            Marker marker = new Marker(mapView, "title", "description", new LatLng(attraction.Latitude, attraction.Longitude));
             marker.setImage(getResources().getDrawable(R.drawable.ic_launcher));
             marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
             marker.setToolTip(new InfoWindow(R.layout.map_info_window, mapView));
             mapView.addMarker(marker);
         }
-//        Marker marker = new Marker(mapView, "title", "description", new LatLng(PairiDaizaManager.iLatLng.getLatitude(), PairiDaizaManager.iLatLng.getLongitude()));
-//        marker.setImage(getResources().getDrawable(R.drawable.ic_launcher));
-//        marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
-//        marker.setToolTip(new InfoWindow(R.layout.map_info_window, mapView));
-//        mapView.addMarker(marker);
     }
 
 

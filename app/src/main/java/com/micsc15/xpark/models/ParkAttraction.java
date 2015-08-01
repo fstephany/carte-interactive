@@ -1,8 +1,8 @@
-package com.micsc15.xpark.models.maps;
+package com.micsc15.xpark.models;
 
 import java.util.UUID;
 
-public class Pin {
+public class ParkAttraction {
 
     // -------------- Objects, Variables -------------- //
 
@@ -15,9 +15,9 @@ public class Pin {
 
     // ------------------ Constructor ----------------- //
 
-    public Pin(){}
+    public ParkAttraction(){}
 
-    public Pin(UUID pinID, String imageUrl, double latitude, double longitude){
+    public ParkAttraction(UUID pinID, String imageUrl, double latitude, double longitude){
         this.PinID = pinID;
         this.ImageUrl = imageUrl;
         this.Latitude = latitude;

@@ -1,0 +1,26 @@
+[
+  {
+    "AreaID": "282c05f1-2dfa-4e25-a002-9cfd8939c038",
+    "Name": "LA LAGUNE",
+    "Attractions": [
+      {
+        "Name": "LE VILLAGE DES RAPACES",
+        "Description": "bla bla bla",
+        "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fb113327ff2c.jpg",
+        "Latitude": "50.583661",
+        "Longitude": "3.8879358"
+      },
+      {
+        "Name": "LESTAPIRS",
+        "Description": "bla bla bla",
+        "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
+        "Latitude": "50.5856025",
+        "Longitude": "3.8831239"
+      }
+    ]
+  },
+  {
+    "AreaID": "dcf4e17d-9706-4c18-941d-40e96543fa39",
+    "Name": "LAVALLÉEDELASOURCE"
+  }
+]
