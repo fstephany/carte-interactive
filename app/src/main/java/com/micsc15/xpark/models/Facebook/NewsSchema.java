@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class NewsSchema {
 
+    public String Id;
     public String Author;
     public String Title;
     public String Content;

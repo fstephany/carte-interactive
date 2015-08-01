@@ -5,51 +5,11 @@
                 tools:context=".MapActivity">
 
     <ListView
-        android:id="@+id/lvNews"
+        android:id="@+id/listNews"
         android:background="#333"
         android:layout_width="match_parent"
         android:layout_height="fill_parent">
 
     </ListView>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
-
-        <ImageView
-            android:id="@+id/fruitImage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/ic_launcher"
-            android:contentDescription="blablabla"/>
-
-        <TextView
-            android:id="@+id/wordTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/fruitImage"
-            android:layout_toRightOf="@+id/fruitImage"
-            android:maxLines="1"
-            android:text="April 12, 2013"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/translationTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/wordTextView"
-            android:layout_below="@+id/wordTextView"
-            android:layout_marginTop="5dp"
-            android:ellipsize="end"
-            android:maxLines="2"
-            android:text="This is a good Post, I hope it will have 2 lines. Please give me 2 lines"
-            android:textIsSelectable="false"
-            android:textSize="16sp" />
-
-    </RelativeLayout>
 
 </RelativeLayout>

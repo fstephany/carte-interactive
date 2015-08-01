@@ -1,11 +1,18 @@
 package com.micsc15.xpark.activities;
 
+import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,13 +31,18 @@ import java.util.ArrayList;
  */
 public class NewsActivity extends BaseActivity {
 
+    static class ViewHolder {
+        public TextView content;
+        //public ImageView image;
+    }
+
     // -------------- Objects, Variables -------------- //
 
     private NewsManager _newsManager;
 
     // --------------------- Views -------------------- //
 
-    ListView lvNews;
+    ListView listNews;
 
 
     // ------------------ LifeCycle ------------------- //
@@ -38,10 +50,12 @@ public class NewsActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_news);
+        setTitle(R.string.news);
 
         // get reference to the views
-        lvNews = (ListView) findViewById(R.id.lvNews);
+        listNews = (ListView) findViewById(R.id.listNews);
 
         // init members
         _newsManager = new NewsManager(getBaseContext());
@@ -49,7 +63,7 @@ public class NewsActivity extends BaseActivity {
         // check if you are connected or not
         if (isConnected()) {
             // call AsyncTask to perform network operation on separate thread
-            new NewsAsyncTask().execute();
+            new NewsAsyncTask(this).execute();
         }
     }
 
@@ -59,7 +73,7 @@ public class NewsActivity extends BaseActivity {
 
     // ------------------- Methods -------------------- //
 
-    public boolean isConnected() {
+    private boolean isConnected() {
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
@@ -70,6 +84,12 @@ public class NewsActivity extends BaseActivity {
     }
 
     private class NewsAsyncTask extends AsyncTask<Void, ArrayList<NewsSchema>, ArrayList<NewsSchema>> {
+
+        private final Activity _context;
+
+        public NewsAsyncTask(Activity context) {
+            _context = context;
+        }
 
         @Override
         protected ArrayList<NewsSchema> doInBackground(Void... params) {
@@ -82,8 +102,60 @@ public class NewsActivity extends BaseActivity {
 
         @Override
         protected void onPostExecute(ArrayList<NewsSchema> news) {
-            //todo
+            NewsAdapter adapter = new NewsAdapter(_context, news);
+            listNews.setAdapter(adapter);
+        }
+    }
 
+     private class NewsAdapter extends BaseAdapter {
+
+        private final Activity _context;
+        private final ArrayList<NewsSchema> _news;
+
+        public NewsAdapter(Activity context, ArrayList<NewsSchema> news) {
+            _context = context;
+            _news = news;
+        }
+
+        @Override
+        public int getCount() {
+            if (_news == null)
+                return 0;
+            return _news.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return _news.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View rowView = convertView;
+
+            // reuse views
+            if (rowView == null) {
+                LayoutInflater inflater = _context.getLayoutInflater();
+                rowView = inflater.inflate(R.layout.news_layout, null);
+
+                // configure view holder
+                ViewHolder viewHolder = new ViewHolder();
+                viewHolder.content = (TextView) rowView.findViewById(R.id.content);
+
+                rowView.setTag(viewHolder);
+            }
+
+            // fill data
+            ViewHolder holder = (ViewHolder) rowView.getTag();
+            NewsSchema news = _news.get(position);
+            holder.content.setText(news.Content);
+
+            return rowView;
         }
     }
 
