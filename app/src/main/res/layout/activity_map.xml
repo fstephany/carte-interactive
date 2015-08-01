@@ -31,37 +31,37 @@
             android:id="@+id/fab_FilterAll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/pink"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_icon="@drawable/ic_fab_star"
-            fab:fab_title="Tout montrer"/>
+            fab:fab_colorNormal="#333333"
+            fab:fab_colorPressed="#434343"
+            fab:fab_icon="@drawable/eye_icon"
+            fab:fab_title="@string/fab_FilterAll"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_FilterNews2015"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/pink"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_icon="@drawable/ic_fab_star"
-            fab:fab_title="Nouveautés 2015"/>
+            fab:fab_colorNormal="#4BDA8A"
+            fab:fab_colorPressed="#5BEA9A"
+            fab:fab_icon="@drawable/new_icon"
+            fab:fab_title="@string/fab_FilterNews2015"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_FilterEat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/pink"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_icon="@drawable/ic_fab_star"
-            fab:fab_title="Manger et boire"/>
+            fab:fab_colorNormal="#469ED9"
+            fab:fab_colorPressed="#56AEE9"
+            fab:fab_icon="@drawable/food_icon"
+            fab:fab_title="@string/fab_FilterEat"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_FilterAnimationsAndFeed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/pink"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_icon="@drawable/ic_fab_star"
-            fab:fab_title="Animations et nourrissage"/>
+            fab:fab_colorNormal="#D94646"
+            fab:fab_colorPressed="#E95656"
+            fab:fab_icon="@drawable/claw_icon"
+            fab:fab_title="@string/fab_FilterAnimationsAndFeed"/>
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
