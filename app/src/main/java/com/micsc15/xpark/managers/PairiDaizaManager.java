@@ -2,6 +2,8 @@ package com.micsc15.xpark.managers;
 
 import com.mapbox.mapboxsdk.api.ILatLng;
 import com.micsc15.xpark.models.Card;
+import com.micsc15.xpark.models.ParkArea;
+import com.micsc15.xpark.models.ParkAttraction;
 
 import java.util.UUID;
 
@@ -29,16 +31,7 @@ public class PairiDaizaManager {
 
     // --------------- Public Methods ----------------- //
 
-    public static Card GetAttractionCard(UUID attractionID){
 
-        Card card = new Card();
-        card.CardID = attractionID;
-        card.Description = "TODO";
-        card.Url = "http://www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fb65db7645ef.jpg";
-        card.Name = "LES OISEAUX ET PLATANES DE LA LAGUNE";
-
-        return card;
-    }
 
     // --------------- Private Methods ---------------- //
 

@@ -1,14 +1,15 @@
 package com.micsc15.xpark.activities.helpers;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.mapbox.mapboxsdk.overlay.Marker;
 import com.mapbox.mapboxsdk.views.InfoWindow;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
+import com.micsc15.xpark.activities.ParkAttractionDetailsActivity;
 import com.micsc15.xpark.models.ParkAttraction;
 
 public class CustomInfoWindow extends InfoWindow {
@@ -39,7 +40,7 @@ public class CustomInfoWindow extends InfoWindow {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getView().getContext(), "jiojoijoij", Toast.LENGTH_LONG).show();
+                getView().getContext().startActivity(new Intent(getView().getContext(), ParkAttractionDetailsActivity.class).putExtra(ParkAttractionDetailsActivity.EXTRA_PARK_ATTRACTION_ID, parkAttraction.AttractionID.toString()));
             }
         });
     }

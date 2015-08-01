@@ -13,8 +13,8 @@ import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.activities.helpers.CustomMarker;
-import com.micsc15.xpark.managers.MapManager;
 import com.micsc15.xpark.managers.PairiDaizaManager;
+import com.micsc15.xpark.managers.ParkAttractionManager;
 import com.micsc15.xpark.models.ParkAttraction;
 import com.micsc15.xpark.models.enums.AttractionType;
 
@@ -80,7 +80,7 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
     private void drawMarkers(AttractionType attractionType) {
         mapView.clear();
 
-        for (ParkAttraction attraction : attractionType != null ? MapManager.GetMapPins(getBaseContext(),  attractionType.ordinal()) : MapManager.GetMapPins(getBaseContext())) {
+        for (ParkAttraction attraction : attractionType != null ? ParkAttractionManager.getParkAttractions(getBaseContext(), attractionType.ordinal()) : ParkAttractionManager.getParkAttractions(getBaseContext())) {
             CustomMarker marker = new CustomMarker(getResources(), mapView, attraction);
             mapView.addMarker(marker);
         }

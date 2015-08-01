@@ -10,7 +10,7 @@ public class ParkAttraction {
 
     // ------------------ Properties ------------------ //
 
-    public UUID PinID;
+    public UUID AttractionID;
     public String ImageUrl;
     public String Name;
     public double Latitude;
@@ -22,7 +22,7 @@ public class ParkAttraction {
     public ParkAttraction(){}
 
     public ParkAttraction(UUID pinID, String imageUrl, double latitude, double longitude){
-        this.PinID = pinID;
+        this.AttractionID = pinID;
         this.ImageUrl = imageUrl;
         this.Latitude = latitude;
         this.Longitude = longitude;
