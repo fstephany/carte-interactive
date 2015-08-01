@@ -1,17 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:fab="http://schemas.android.com/apk/res-auto"
-                xmlns:mapbox="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:context=".MapActivity">
-
-    <!--<com.mapbox.mapboxsdk.views.MapView-->
-        <!--android:id="@+id/mapView"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--mapbox:accessToken="pk.eyJ1IjoidXhtYXN0ZXIiLCJhIjoiMGNiMTFhNDBlYzkwOGI5ZWEwYmM2YWUzZmEyMDQ3ZWEifQ.mDGvbv6QR9W2fsUhHHkwSw"-->
-        <!--mapbox:mapid="uxmaster.bf6cd864"/>-->
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
