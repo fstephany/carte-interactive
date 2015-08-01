@@ -10,6 +10,8 @@ public class ParkArea {
     // ------------------ Properties ------------------ //
 
     public String Name;
+    public String Description;
+    public String ImageUrl;
     public UUID AreaID;
     public ArrayList<ParkAttraction> Attractions;
 

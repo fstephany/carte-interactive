@@ -12,6 +12,7 @@ public class GraphData {
     public String message;
     public String story;
     public String picture;
+    public String full_picture;
     public String link;
     public Date created_time;
 

@@ -51,7 +51,7 @@ public class NewsManager {
                     String message = graphData.message.replace("\n", "<br />");
                     newsSchema.Content = Html.fromHtml(message).toString();
                 }
-                newsSchema.ImageUri = ConvertImageUrlFromParameter(graphData.picture);
+                newsSchema.ImageUrl = ConvertImageUrlFromParameter(graphData.full_picture);
                 newsSchema.FeedUrl = graphData.link;
                 result.add(newsSchema);
             }
@@ -60,10 +60,10 @@ public class NewsManager {
         return result;
     }
 
-    private Uri ConvertImageUrlFromParameter(String imageUrl) {
+    private String ConvertImageUrlFromParameter(String imageUrl) {
+        String parsedImageUrl = null;
         try {
             if (!TextUtils.isEmpty(imageUrl)) {
-                String parsedImageUrl = null;
                 if (imageUrl.contains("url=")) {
                     Uri imageUri = Uri.parse(imageUrl);
                     String url = imageUri.getQueryParameter("url");
@@ -71,11 +71,10 @@ public class NewsManager {
                 } else {
                     parsedImageUrl = Html.fromHtml(imageUrl).toString();
                 }
-                return Uri.parse(parsedImageUrl);
             }
         } catch (Exception e) {
         }
-        return null;
+        return parsedImageUrl;
     }
 
 }

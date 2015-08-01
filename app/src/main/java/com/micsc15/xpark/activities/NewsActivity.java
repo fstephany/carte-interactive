@@ -6,6 +6,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ import com.micsc15.xpark.R;
 import com.micsc15.xpark.dataaccess.facebook.FacebookGraphResponse;
 import com.micsc15.xpark.managers.NewsManager;
 import com.micsc15.xpark.models.Facebook.NewsSchema;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -160,8 +162,10 @@ public class NewsActivity extends BaseActivity {
             NewsSchema news = _news.get(position);
             holder.content.setText(news.Content);
             holder.datum.setText(_simpleDate.format(news.PublishDate));
-            if(news.ImageUri != null) {
-                holder.picture.setImageURI(news.ImageUri);
+            if (!TextUtils.isEmpty(news.ImageUrl)) {
+                Picasso.with(_context).load(news.ImageUrl).into(holder.picture);
+            } else {
+                holder.picture.setImageURI(null);
             }
 
             return rowView;
