@@ -1,84 +1,88 @@
-[{
-  "AreaID": "282c05f1-2dfa-4e25-a002-9cfd8939c038",
-  "Name": "LA TERRE DES ORIGINES",
-  "Description" : "Bienvenue sur la terre des « Big Five », les cinq animaux les plus emblématiques de l’Afrique : le lion, l’éléphant, le Buffle du Cap, le rhinocéros et le léopard. Cette faune fascinante évolue sur huit hectares de terre de piste et de savane. La Terre des Origines, incandescente, chaleureuse et primitive, nous plonge dans le berceau de l’humanité. Ici, les girafes, hippopotames, antilopes et guépards côtoient les phacochères, hyènes et bien d’autres espèces. Les singes colobes nous observent depuis la canopée alors que les lémurs s’amusent à notre contact. Sous des airs de djembés endiablés, nous découvrons un grand village Tamberma (aux confins du Togo et du Bénin), ses maisons de terre rouge et ses toits de chaume. Hissé sur ses pilotis, et bordé de pirogues, un village de pêcheurs nous invite à palabrer dans sa case des chefs, sa petite école, son épicerie traditionnelle, sa maison des sorciers vaudous, son école de musique, sa case à dictons ou encore son salon de coiffure.",
-  "ImageUrl": "",
-  "Attractions": [{
-    "AttractionID": "583a5447-4263-45e6-b21b-4417bcb1c084",
-    "Name": "LES LÉMURIENS DE NOSY KOMBA",
-    "Description": "Trois îlots pour une surface totale de 7.000 m2, conçus comme leur modèle: la petite île de Nosy Komba, au nord-est de Madagascar. Vous allez y découvrir l’univers très particulier des lémuriens.  "Lémurien" est un terme familier, synonyme de "prosimien", qui est le terme exact. Les prosimiens sont des primates différents des singes - appelés simiens en termes savants - et des hommes.  Les lémuriens vivent dans les arbres des forêts humides. Animaux nocturnes, ils sont dotés de grands yeux globuleux. Seul le Maki katta fait exception puisqu’il vit la journée et se déplace en partie sur la terre. 90 % des lémuriens vivent à Madagascar.  Occupant des habitats divers dans le sud et le sud-ouest de l’île de Madagascar, le maki vit dans un grand nombre de zones protégées. Il n’empêche qu’on continue à le chasser et que son habitat est de plus en plus menacé.Sur Nosy Komba, vous trouverez les Maki Catta et les Varis.",
-    "Latitude": "50.583661",
-    "Longitude": "3.8879358",
-    "ImageUrl": "lemur_card.jpg",
-    "AttractionType": 0
+[
+  {
+    "AreaID": "282c05f1-2dfa-4e25-a002-9cfd8939c038",
+    "Name": "LA TERRE DES ORIGINES",
+    "Description": "Bienvenue sur la terre des « Big Five », les cinq animaux les plus emblématiques de l’Afrique : le lion, l’éléphant, le Buffle du Cap, le rhinocéros et le léopard. Cette faune fascinante évolue sur huit hectares de terre de piste et de savane. La Terre des Origines, incandescente, chaleureuse et primitive, nous plonge dans le berceau de l’humanité. Ici, les girafes, hippopotames, antilopes et guépards côtoient les phacochères, hyènes et bien d’autres espèces. Les singes colobes nous observent depuis la canopée alors que les lémurs s’amusent à notre contact. Sous des airs de djembés endiablés, nous découvrons un grand village Tamberma (aux confins du Togo et du Bénin), ses maisons de terre rouge et ses toits de chaume. Hissé sur ses pilotis, et bordé de pirogues, un village de pêcheurs nous invite à palabrer dans sa case des chefs, sa petite école, son épicerie traditionnelle, sa maison des sorciers vaudous, son école de musique, sa case à dictons ou encore son salon de coiffure.",
+    "ImageUrl": "",
+    "Attractions": [
+      {
+        "AttractionID": "583a5447-4263-45e6-b21b-4417bcb1c084",
+        "Name": "LES LÉMURIENS DE NOSY KOMBA",
+        "Description": "Trois îlots pour une surface totale de 7.000 m2, conçus comme leur modèle: la petite île de Nosy Komba, au nord-est de Madagascar. Vous allez y découvrir l’univers très particulier des lémuriens.  Lémurien est un terme familier, synonyme de prosimien, qui est le terme exact. Les prosimiens sont des primates différents des singes - appelés simiens en termes savants - et des hommes.  Les lémuriens vivent dans les arbres des forêts humides. Animaux nocturnes, ils sont dotés de grands yeux globuleux. Seul le Maki katta fait exception puisqu’il vit la journée et se déplace en partie sur la terre. 90 % des lémuriens vivent à Madagascar.  Occupant des habitats divers dans le sud et le sud-ouest de l’île de Madagascar, le maki vit dans un grand nombre de zones protégées. Il n’empêche qu’on continue à le chasser et que son habitat est de plus en plus menacé.Sur Nosy Komba, vous trouverez les Maki Catta et les Varis.",
+        "Latitude": "50.583661",
+        "Longitude": "3.8879358",
+        "ImageUrl": "lemur_card.jpg",
+        "AttractionType": 0
+      },
+      {
+        "AttractionID": "f789633e-a59b-4afb-9a78-193a700ae9e1",
+        "Name": "LES BIG FIVE",
+        "Description": "LE LION Ses dents, qui ont jusqu’à six centimètres de long, sont capables de mordre avec une pression de plus de 300 kg! Bien utile quand il s’agit de se trouver 7 kg de viande par jour pour nourrir sa masse de 250 kg de chair et de muscles. Mais le lion mâle est, on le sait, un roi fainéant qui ne chasse pratiquement pas et laisse ce soin à ses femelles, plus petites - jusqu’à 140 kg pièce tout de même - et dépourvues de crinière. Les lions vivent en groupes de trois à une trentaine d’individus, comptant un à sept mâles adultes et une à dix-huit femelles. Leur territoire de chasse peut couvrir jusqu’à 500 km2. Leurs proies préférées sont les buffles, gnous, zèbres, antilopes, impalas, phacochères, girafes, plus rarement les éléphants, hippopotames et rhinocéros. Les lions sont très agressifs envers les hyènes, avec lesquelles ils sont en compétition pour la nourriture, comme avec les guépards. Ils ne chassent que pour renouveler leurs réserves de nourriture et, s’ils ont vraiment faim, peuvent avaler jusqu’à 40 kg de viande en une fois (30 kg pour les femelles). En Afrique, les lions sont encore de seize à trente mille, dans une zone qui s’étend de l’Afrique centrale à l’Afrique du Sud. On les trouve surtout dans les grands parcs nationaux, comme le Serengeti en Tanzanie. Par ailleurs, en Inde, on en dénombre encore quelque quatre cents spécimens. Enfin, rappelons qu’au paléolithique (35.000 ans av. J.-C.), le lion vivait en Espagne et en France, comme en témoignent les peintures rupestres des grottes de Lascaux. Ceux que l’on peut admirer dans les parcs zoologiques ou dans les cirques sont pour la plupart nés en captivité, où ils se reproduisent assez bien. Ceux que vous voyez ici proviennent d’Israël et des Pays-Bas. SUZY, L'ÉLÉPHANTE D'AFRIQUE Tout le monde le connaît et l'aime, on sait qu'il a une mémoire… d'éléphant, qu'il peut vivre plus de 70 ans, qu'il peut manger 250 kg de nourriture par jour et, bien sûr, que c'est le plus grand animal terrestre. De 5 à 7 tonnes et la taille en rapport: l’Eléphant d'Afrique mâle adulte mesure plus de 3 mètres au garrot. A tout seigneur, tout honneur: Suzy, notre éléphante d'Afrique, a vécu pendant 21 ans dans un parc zoologique des Flandres; c'était un éléphanteau orphelin du Botswana, qui a été élevé aubiberon en Belgique. Suzy a son soigneur attitré (on dit cornac ou mahout), un Belge d'origine iranienne, Puri. C'est un homme au caractère serein, presque placide, qui réussit à communiquer sans problème avec cet animal de trois tonnes. En Afrique, la population est estimée entre 400.000 et 500.000 éléphants (En 1930, ils étaient 5 millions). On trouve les plus fortes concentrations de population en Afrique australe et orientale et on distingue aujourd'hui les éléphants de forêt (Afrique centrale et de l'Ouest) et les éléphants de savane (Afrique du Sud et de l'Est). Les éléphants sont des animaux sociaux qui vivent en troupeaux d'une dizaine d'individus. C’est une femelle qui mène le clan. LE RHINOCÉROS BLANC D’abord, n’allez pas croire qu’il est sale, ce rhinocéros. C’est vrai qu’il est bien plus gris que blanc… mais en fait c’est son nom lui-même qui fait tache. Les colons Boers d’Afrique du Sud, d’origine hollandaise, l’appelaient wijd-lip, ou lèvrelarge. Ce sont les Britanniques qui ont mal interprété wijd en white et voilà pourquoi, la nuit comme le jour, tous les Rhinocéros blancs sont gris. De tous les rhinos du monde (ceux d’Asie - Java, Sumatra, Inde, etc. - plus les Africains, noir et blanc), c’est celui-ci qui est le plus grand, avec une taille qui varie de 3,7 à 4,2 m. Il peut peser jusqu’à 3.000 kg et vit une cinquantaine d’années. Si on le laisse vivre, puisque les braconniers chassent le rhinocéros pour les supposées vertus thérapeutiques et aphrodisiaques de sa corne… jusque dans les trophées empaillés des musées! L’espèce n’est pas réellement menacée, mais sa population diminue, elle n’est plus que de 17.500 individus environ.",
+        "Url": "big_five_card.png",
+        "Latitude": "50.5856025",
+        "Longitude": "3.8831239",
+        "AttractionType": 0
+      },
+      {
+        "AttractionID": "560fbb95-798f-40b1-9461-22d694b74fff",
+        "Name": "LES COLOBES GUÉRÉZA",
+        "Description": "Ils ont leur île bien à eux, avec les arbres qu’ils adorent comme refuge et aussi comme source de nourriture. Les Colobes guéréza le méritent bien, leur espèce a longtemps été pourchassée pour sa trop jolie fourrure noir et blanc. Ils ne sont heureusement plus aujourd’hui en danger d’extinction, comme leurs cousins de Zanzibar, les Colobes rouges, dont il ne reste plus que 1.500 individus. On trouve des Colobes guéréza dans presque toute l’Afrique moyenne et orientale, du Sénégal jusqu’à l’Ethiopie et, vers le Sud, en Angola et en Zambie. C’est un plaisir de les voir folâtrer dans les arbres, ils sont incroyablement agiles. Ces singes assez grands - de 45 à 70 cm, avec une queue qui peut atteindre un mètre de long - se nourrissent de feuilles, de fruits et de bourgeons. Ils vivent en groupe d’une quinzaine sous la direction d’un mâle dominant. La nuit, un des leurs reste éveillé pour avertir de la présence éventuelle d’un léopard, leur principal prédateur. Les petits naissent curieusement tout blancs et le restent pendant quelques mois avant d’avoir la fourrure des adultes.",
+        "Url": "colobes_gue__re__za_card.png",
+        "Latitude": "50.5866333",
+        "Longitude": "3.8881822",
+        "AttractionType": 0
+      },
+      {
+        "AttractionID": "9f94b8d3-4149-43e6-9135-9db82510c468",
+        "Name": "LE BÉLVÉDÈRE AUX GIRAFES",
+        "Description": "Elles sont évidemment un des emblèmes de l’Afrique et un des animaux préférés des visiteurs, en particulier depuis que l’Artisan a créé un belvédère tout en bois depuis lequel vous tutoyez maintenant le plus grand des animaux (jusqu’à 5,80 m de haut!) les yeux dans les yeux. Rassurez-vous, elles ne vous mordront pas. Vous pouvez même les nourrir. Au fait, pourquoi Giraffa camelopardalis, qui est un descendant de l’okapi, a-t-elle développé ce cou démesuré? C’est qu’au lieu de continuer à se nourrir d'herbes, elle s'est habituée peu à peu à brouter des pousses de plus en plus élevées. La sélection naturelle a joué son rôle, les girafes au long cou avaient accès à plus de nourriture et ont donc mieux survécu. Ceci dit, ce cou-là, si long, n’a pas plus de vertèbres, sept en tout, qu’un cou humain. Autre curiosité, la girafe est le seul mammifère capable de lécher ses oreilles avec sa langue (essayez, vous verrez que ce n’est pas évident). On les trouve en Afrique, du Tchad jusqu’à l’Afrique du Sud. C’est une espèce protégée dans la plupart des pays. La population totale des girafes représente 110 000 à 150 000 individus, contre un million au milieu des années 1990. Un dernier troupeau de girafes en liberté subsiste au Niger, près de Niamey.",
+        "Url": "girafe_card.png",
+        "Latitude": "50.5865559",
+        "Longitude": "3.8886811",
+        "AttractionType": 0
+      },
+      {
+        "AttractionID": "43a2709b-31e0-42a4-91b3-00b2add91030",
+        "Name": "LES HIPPOPOTAMES SOUS L'EAU",
+        "Description": "TODO",
+        "Url": "hippo_card.png",
+        "Latitude": "50.5863103",
+        "Longitude": "3.8872404",
+        "AttractionType": 0
+      },
+      {
+        "AttractionID": "1beed721-3106-43ce-8c98-3a24a5ff570e",
+        "Name": "LE VILLAGE LACUSTRE AFRICAIN",
+        "Description": "Qu’est-ce qui peut peser de trois à cinq tonnes tout en courant plus vite (30 km/h) qu’un homme moyen? On est tellement habitué au spectacle des hippopotames (du grec Hippos Potamos, qui signifie chevaldufleuve) immergés dans l’eau tiède, laissant juste dépasser les yeux, les oreilles et les naseaux, qu’on oublie que ces grosses bêtes peuvent se montrer redoutables sur terre. Redoutables est le mot, il vaut mieux ne pas se trouver devant eux quand ils chargent, avec leurs incisives de près de 60 cm de long… Ils ne les utilisent le plus souvent, bien sûr, que pour déchiqueter leurs 50 kg de végétaux quotidiens. L’hippopotame, avec l’éléphant et le rhinocéros, est un des plus grands mammifères terrestres; il peut atteindre cinq mètres de long, mais la moyenne est de trois mètres cinquante, pour une hauteur au garrot d’un mètre cinquante. Ils vivent assez vieux, de quarante à cinquante ans, et en groupe d’une vingtaine d’individus. Pourquoi restent-ils si longtemps dans l’eau? Tout simplement parce qu’ils ne possèdent pas de glandes sudoripares et ne transpirent donc pas. Etre dans l’eau est leur seule façon de rester au frais et d’échapper au soleil brûlant d’Afrique. Leur peau secrète d’ailleurs une sorte de produit antisolaire naturel, une sécrétion rougeâtre qu’on a prise autrefois pour du sang. Présents dans les fleuves d’Ouganda, du Soudan, du nord du Congo, dans l’ouest de la Gambie, au Botswana, au Zimbabwe, en Zambie et en Afrique du Sud, les hippopotames ont une organisation très territoriale. Chaque mâle défend opiniâtrement sa berge de fleuve et son harem de femelles contre les intrus et, donc, les touristes et les fermiers vis-à-vis desquels il peut se révéler dangereux. Dans l’eau, ils sont d’une grâce étonnante, se propulsant à coups de pattes arrière sur le fond. Ils dorment même sous l’eau, remontant automatiquement pour respirer toutes les trois à cinq minutes. Et leurs petits, inévitablement, naissent sous l’eau.",
+        "Url": "lacruste_card.png",
+        "Latitude": "50.586467",
+        "Longitude": "3.8863358",
+        "AttractionType": 0
+      },
+      {
+        "AttractionID": "0286605d-7670-479c-9c06-c544da3d82fb",
+        "Name": "LE VILLAGE TAMBERMA",
+        "Description": "C’est de la région du nord du Togo, limitrophe du Bénin, que viennent ces belles cases rondes au toit de chaume. Ce sont les maisons typiques d’une ethnie appelée les Tamberma (un nom qui signifie bonmaçon), sans doute implantée dans cette région vers le XVIe siècle, en provenance du Burkina Faso. Les Tamberma, qui sont également connus sous le nom de Bétammaribé du Togo, seraient les lointains descendants d’un empereur Mossi, Mogho-Naba. L’Afrique, on l’oublie souvent, a compté de puissants royaumes pendant son Aged’Or, entre les Xe et XVe siècles, mais son organisation traditionnelle a été progressivement déséquilibrée par les contacts avec Occident et Islam. Selon certaines sources, les Tamberma se seraient expatriés par refus de se laisser dominer par l’islam; mais peut-être ont-ils dû tout simplement chercher de nouvelles terres à cause d’une famine. En tout cas, ce qui caractérise leurs villages, outre la parfaite régularité des constructions, c’est la coexistence, voire l’interpénétration des activités des vivants et des esprits sacrés, invisibles mais puissants. On le voit bien, là-bas, dans les cultures au milieu desquelles des îlots sauvages sont laissés en friche depuis des temps immémoriaux; dans les maisons, il est plus malaisé de distinguer l’influence du sacré, mais elle existe et imprègne les mentalités. La maison, ou plutôt le foyer familial, compte énormément chez les Tamberma. Elle s’appelle tékyênté: c’est cette case ronde de terre et de paille, avec ses sortes de tourelles adossées, qui sont des chambres et la cuisine, contiguë à une pièce d’eau, avec une évacuation directe vers l’extérieur. Du dehors, on dirait un peu un château-fort, avec une entrée unique. C’est effectivement une protection contre les dangers de l’extérieur, de même qu’une protection contre les chaleurs du jour. La maison tamberma n’ayant qu’une ouverture, il y fait sombre, donc plus frais. L’air circule dans un seul sens, apportant le soir sa fraîcheur et emmenant avec lui, en sortant, la fumée du feu. Les murs n’absorbent que peu la chaleur en raison de l’inertie thermique de la terre des parois. A l’intérieur, le rez-de-chaussée est réservé aux animaux et aux esprits des disparus, les occupants vivant au premier étage, dans les chambres qui donnent sur une terrasse principale. La coutume veut qu’on entre et sorte des chambres à reculons, pour ne pas être surpris en tournant le dos. Au sol, des cônes de terre intriguent: certains d’entre eux sont des greniers à même le sol, d’autres sont en fait des autels de prière, pour les vivants comme pour les esprits. La partie sud de la maison est considérée comme masculine, celle qui est au nord, féminine. Il y a toujours un tekyênté plus important et plus grand que les autres, c’est le foyer ancestral. Des études très fouillées (*) ont été consacrées à l’organisation sophistiquée des maisons Tamberma, conçues selon les besoins d’un peuple qui, le jour, vit dehors et se retrouve le soir dans le foyer familial. L’Artisan de Pairi Daiza a choisi cette forme d’architecture, aussi intéressante que celle des demeures du peuple Dogon, pour illustrer le raffinement - dans la simplicité - de formes répondant parfaitement à leur fonction. Mais, dans ces maisons, vous trouverez aussi quantité d’objets usuels provenant d’autres pays africains, comme des objets consacrés du culte du Vaudou, originaire du Bénin et du Dahomey avant d’avoir conquis Haïti, notamment, avec les malheureux esclaves africains importés dans les îles. (*) notamment Architecture, société et paysage Bétammaribé au Togo par Guy-Herman Padenou et Monique Pastor-Barrué, de l’université du Mirail à Toulouse.",
+        "Url": "tamberma_card.png",
+        "Latitude": "50.5865277",
+        "Longitude": "3.8853455",
+        "AttractionType": 0
+      }
+    ]
   },
-    {
-      "AttractionID": "f789633e-a59b-4afb-9a78-193a700ae9e1",
-      "Name": "LES BIG FIVE",
-      "Description": "LE LION Ses dents, qui ont jusqu’à six centimètres de long, sont capables de mordre avec une pression de plus de 300 kg! Bien utile quand il s’agit de se trouver 7 kg de viande par jour pour nourrir sa masse de 250 kg de chair et de muscles. Mais le lion mâle est, on le sait, un roi fainéant qui ne chasse pratiquement pas et laisse ce soin à ses femelles, plus petites - jusqu’à 140 kg pièce tout de même - et dépourvues de crinière. Les lions vivent en groupes de trois à une trentaine d’individus, comptant un à sept mâles adultes et une à dix-huit femelles. Leur territoire de chasse peut couvrir jusqu’à 500 km2. Leurs proies préférées sont les buffles, gnous, zèbres, antilopes, impalas, phacochères, girafes, plus rarement les éléphants, hippopotames et rhinocéros. Les lions sont très agressifs envers les hyènes, avec lesquelles ils sont en compétition pour la nourriture, comme avec les guépards. Ils ne chassent que pour renouveler leurs réserves de nourriture et, s’ils ont vraiment faim, peuvent avaler jusqu’à 40 kg de viande en une fois (30 kg pour les femelles). En Afrique, les lions sont encore de seize à trente mille, dans une zone qui s’étend de l’Afrique centrale à l’Afrique du Sud. On les trouve surtout dans les grands parcs nationaux, comme le Serengeti en Tanzanie. Par ailleurs, en Inde, on en dénombre encore quelque quatre cents spécimens. Enfin, rappelons qu’au paléolithique (35.000 ans av. J.-C.), le lion vivait en Espagne et en France, comme en témoignent les peintures rupestres des grottes de Lascaux. Ceux que l’on peut admirer dans les parcs zoologiques ou dans les cirques sont pour la plupart nés en captivité, où ils se reproduisent assez bien. Ceux que vous voyez ici proviennent d’Israël et des Pays-Bas. SUZY, L'ÉLÉPHANTE D'AFRIQUE Tout le monde le connaît et l'aime, on sait qu'il a une mémoire… d'éléphant, qu'il peut vivre plus de 70 ans, qu'il peut manger 250 kg de nourriture par jour et, bien sûr, que c'est le plus grand animal terrestre. De 5 à 7 tonnes et la taille en rapport: l’Eléphant d'Afrique mâle adulte mesure plus de 3 mètres au garrot. A tout seigneur, tout honneur: Suzy, notre éléphante d'Afrique, a vécu pendant 21 ans dans un parc zoologique des Flandres; c'était un éléphanteau orphelin du Botswana, qui a été élevé "aubiberon" en Belgique. Suzy a son soigneur attitré (on dit cornac ou mahout), un Belge d'origine iranienne, Puri. C'est un homme au caractère serein, presque placide, qui réussit à communiquer sans problème avec cet animal de trois tonnes. En Afrique, la population est estimée entre 400.000 et 500.000 éléphants (En 1930, ils étaient 5 millions). On trouve les plus fortes concentrations de population en Afrique australe et orientale et on distingue aujourd'hui les éléphants de forêt (Afrique centrale et de l'Ouest) et les éléphants de savane (Afrique du Sud et de l'Est). Les éléphants sont des animaux sociaux qui vivent en troupeaux d'une dizaine d'individus. C’est une femelle qui mène le clan. LE RHINOCÉROS BLANC D’abord, n’allez pas croire qu’il est sale, ce rhinocéros. C’est vrai qu’il est bien plus gris que blanc… mais en fait c’est son nom lui-même qui fait tache. Les colons Boers d’Afrique du Sud, d’origine hollandaise, l’appelaient "wijd-lip", ou "lèvrelarge". Ce sont les Britanniques qui ont mal interprété "wijd" en "white" et voilà pourquoi, la nuit comme le jour, tous les Rhinocéros blancs sont gris. De tous les rhinos du monde (ceux d’Asie - Java, Sumatra, Inde, etc. - plus les Africains, noir et blanc), c’est celui-ci qui est le plus grand, avec une taille qui varie de 3,7 à 4,2 m. Il peut peser jusqu’à 3.000 kg et vit une cinquantaine d’années. Si on le laisse vivre, puisque les braconniers chassent le rhinocéros pour les supposées vertus thérapeutiques et aphrodisiaques de sa corne… jusque dans les trophées empaillés des musées! L’espèce n’est pas réellement menacée, mais sa population diminue, elle n’est plus que de 17.500 individus environ.",
-      "Url": "big_five_card.png",
-      "Latitude": "50.5856025",
-      "Longitude": "3.8831239",
-      "AttractionType": 0
-    },
-    {
-      "AttractionID": "560fbb95-798f-40b1-9461-22d694b74fff",
-      "Name": "LES COLOBES GUÉRÉZA",
-      "Description": "Ils ont leur île bien à eux, avec les arbres qu’ils adorent comme refuge et aussi comme source de nourriture. Les Colobes guéréza le méritent bien, leur espèce a longtemps été pourchassée pour sa trop jolie fourrure noir et blanc. Ils ne sont heureusement plus aujourd’hui en danger d’extinction, comme leurs cousins de Zanzibar, les Colobes rouges, dont il ne reste plus que 1.500 individus. On trouve des Colobes guéréza dans presque toute l’Afrique moyenne et orientale, du Sénégal jusqu’à l’Ethiopie et, vers le Sud, en Angola et en Zambie. C’est un plaisir de les voir folâtrer dans les arbres, ils sont incroyablement agiles. Ces singes assez grands - de 45 à 70 cm, avec une queue qui peut atteindre un mètre de long - se nourrissent de feuilles, de fruits et de bourgeons. Ils vivent en groupe d’une quinzaine sous la direction d’un mâle dominant. La nuit, un des leurs reste éveillé pour avertir de la présence éventuelle d’un léopard, leur principal prédateur. Les petits naissent curieusement tout blancs et le restent pendant quelques mois avant d’avoir la fourrure des adultes.",
-      "Url": "colobes_gue__re__za_card.png",
-      "Latitude": "50.5866333",
-      "Longitude": "3.8881822",
-      "AttractionType": 0
-    },
-    {
-      "AttractionID": "9f94b8d3-4149-43e6-9135-9db82510c468",
-      "Name": "LE BÉLVÉDÈRE AUX GIRAFES",
-      "Description": "Elles sont évidemment un des emblèmes de l’Afrique et un des animaux préférés des visiteurs, en particulier depuis que l’Artisan a créé un belvédère tout en bois depuis lequel vous tutoyez maintenant le plus grand des animaux (jusqu’à 5,80 m de haut!) les yeux dans les yeux. Rassurez-vous, elles ne vous mordront pas. Vous pouvez même les nourrir. Au fait, pourquoi Giraffa camelopardalis, qui est un descendant de l’okapi, a-t-elle développé ce cou démesuré? C’est qu’au lieu de continuer à se nourrir d'herbes, elle s'est habituée peu à peu à brouter des pousses de plus en plus élevées. La sélection naturelle a joué son rôle, les girafes au long cou avaient accès à plus de nourriture et ont donc mieux survécu. Ceci dit, ce cou-là, si long, n’a pas plus de vertèbres, sept en tout, qu’un cou humain. Autre curiosité, la girafe est le seul mammifère capable de lécher ses oreilles avec sa langue (essayez, vous verrez que ce n’est pas évident). On les trouve en Afrique, du Tchad jusqu’à l’Afrique du Sud. C’est une espèce protégée dans la plupart des pays. La population totale des girafes représente 110 000 à 150 000 individus, contre un million au milieu des années 1990. Un dernier troupeau de girafes en liberté subsiste au Niger, près de Niamey.",
-      "Url": "girafe_card.png",
-      "Latitude": "50.5865559",
-      "Longitude": "3.8886811",
-      "AttractionType": 0
-    },
-    {
-      "AttractionID": "43a2709b-31e0-42a4-91b3-00b2add91030",
-      "Name": "LES HIPPOPOTAMES SOUS L'EAU",
-      "Description": "TODO",
-      "Url": "hippo_card.png",
-      "Latitude": "50.5863103",
-      "Longitude": "3.8872404",
-      "AttractionType": 0
-    },
-    {
-      "AttractionID": "1beed721-3106-43ce-8c98-3a24a5ff570e",
-      "Name": "LE VILLAGE LACUSTRE AFRICAIN",
-      "Description": "Qu’est-ce qui peut peser de trois à cinq tonnes tout en courant plus vite (30 km/h) qu’un homme moyen? On est tellement habitué au spectacle des hippopotames (du grec Hippos Potamos, qui signifie "chevaldufleuve") immergés dans l’eau tiède, laissant juste dépasser les yeux, les oreilles et les naseaux, qu’on oublie que ces grosses bêtes peuvent se montrer redoutables sur terre. Redoutables est le mot, il vaut mieux ne pas se trouver devant eux quand ils chargent, avec leurs incisives de près de 60 cm de long… Ils ne les utilisent le plus souvent, bien sûr, que pour déchiqueter leurs 50 kg de végétaux quotidiens. L’hippopotame, avec l’éléphant et le rhinocéros, est un des plus grands mammifères terrestres; il peut atteindre cinq mètres de long, mais la moyenne est de trois mètres cinquante, pour une hauteur au garrot d’un mètre cinquante. Ils vivent assez vieux, de quarante à cinquante ans, et en groupe d’une vingtaine d’individus. Pourquoi restent-ils si longtemps dans l’eau? Tout simplement parce qu’ils ne possèdent pas de glandes sudoripares et ne transpirent donc pas. Etre dans l’eau est leur seule façon de rester au frais et d’échapper au soleil brûlant d’Afrique. Leur peau secrète d’ailleurs une sorte de produit antisolaire naturel, une sécrétion rougeâtre qu’on a prise autrefois pour du sang. Présents dans les fleuves d’Ouganda, du Soudan, du nord du Congo, dans l’ouest de la Gambie, au Botswana, au Zimbabwe, en Zambie et en Afrique du Sud, les hippopotames ont une organisation très territoriale. Chaque mâle défend opiniâtrement sa berge de fleuve et son harem de femelles contre les intrus et, donc, les touristes et les fermiers vis-à-vis desquels il peut se révéler dangereux. Dans l’eau, ils sont d’une grâce étonnante, se propulsant à coups de pattes arrière sur le fond. Ils dorment même sous l’eau, remontant automatiquement pour respirer toutes les trois à cinq minutes. Et leurs petits, inévitablement, naissent sous l’eau.",
-      "Url": "lacruste_card.png",
-      "Latitude": "50.586467",
-      "Longitude": "3.8863358",
-      "AttractionType": 0
-    },
-    {
-      "AttractionID": "0286605d-7670-479c-9c06-c544da3d82fb",
-      "Name": "LE VILLAGE TAMBERMA",
-      "Description": "C’est de la région du nord du Togo, limitrophe du Bénin, que viennent ces belles cases rondes au toit de chaume. Ce sont les maisons typiques d’une ethnie appelée les Tamberma (un nom qui signifie "bonmaçon"), sans doute implantée dans cette région vers le XVIe siècle, en provenance du Burkina Faso. Les Tamberma, qui sont également connus sous le nom de Bétammaribé du Togo, seraient les lointains descendants d’un empereur Mossi, Mogho-Naba. L’Afrique, on l’oublie souvent, a compté de puissants royaumes pendant son "Aged’Or", entre les Xe et XVe siècles, mais son organisation traditionnelle a été progressivement déséquilibrée par les contacts avec Occident et Islam. Selon certaines sources, les Tamberma se seraient expatriés par refus de se laisser dominer par l’islam; mais peut-être ont-ils dû tout simplement chercher de nouvelles terres à cause d’une famine. En tout cas, ce qui caractérise leurs villages, outre la parfaite régularité des constructions, c’est la coexistence, voire l’interpénétration des activités des vivants et des esprits sacrés, invisibles mais puissants. On le voit bien, là-bas, dans les cultures au milieu desquelles des îlots sauvages sont laissés en friche depuis des temps immémoriaux; dans les maisons, il est plus malaisé de distinguer l’influence du sacré, mais elle existe et imprègne les mentalités. La maison, ou plutôt le foyer familial, compte énormément chez les Tamberma. Elle s’appelle tékyênté: c’est cette case ronde de terre et de paille, avec ses sortes de tourelles adossées, qui sont des chambres et la cuisine, contiguë à une pièce d’eau, avec une évacuation directe vers l’extérieur. Du dehors, on dirait un peu un château-fort, avec une entrée unique. C’est effectivement une protection contre les dangers de l’extérieur, de même qu’une protection contre les chaleurs du jour. La maison tamberma n’ayant qu’une ouverture, il y fait sombre, donc plus frais. L’air circule dans un seul sens, apportant le soir sa fraîcheur et emmenant avec lui, en sortant, la fumée du feu. Les murs n’absorbent que peu la chaleur en raison de l’inertie thermique de la terre des parois. A l’intérieur, le rez-de-chaussée est réservé aux animaux et aux esprits des disparus, les occupants vivant au premier étage, dans les chambres qui donnent sur une terrasse principale. La coutume veut qu’on entre et sorte des chambres à reculons, pour ne pas être surpris en tournant le dos. Au sol, des cônes de terre intriguent: certains d’entre eux sont des greniers à même le sol, d’autres sont en fait des autels de prière, pour les vivants comme pour les esprits. La partie sud de la maison est considérée comme masculine, celle qui est au nord, féminine. Il y a toujours un tekyênté plus important et plus grand que les autres, c’est le foyer ancestral. Des études très fouillées (*) ont été consacrées à l’organisation sophistiquée des maisons Tamberma, conçues selon les besoins d’un peuple qui, le jour, vit dehors et se retrouve le soir dans le foyer familial. L’Artisan de Pairi Daiza a choisi cette forme d’architecture, aussi intéressante que celle des demeures du peuple Dogon, pour illustrer le raffinement - dans la simplicité - de formes répondant parfaitement à leur fonction. Mais, dans ces maisons, vous trouverez aussi quantité d’objets usuels provenant d’autres pays africains, comme des objets consacrés du culte du Vaudou, originaire du Bénin et du Dahomey avant d’avoir conquis Haïti, notamment, avec les malheureux esclaves africains importés dans les îles. (*) notamment Architecture, société et paysage Bétammaribé au Togo par Guy-Herman Padenou et Monique Pastor-Barrué, de l’université du Mirail à Toulouse.",
-      "Url": "tamberma_card.png",
-      "Latitude": "50.5865277",
-      "Longitude": "3.8853455",
-      "AttractionType": 0
-    }]
-},
   {
     "AreaID": "ba5d9363-532a-4bf3-85bf-bc371278de66",
     "Name": "RESTAURANT",
-    "Attractions": [{
-      "AttractionID": "b34e9179-5687-4a16-8935-f223c42defcb",
-      "Name": "LE TEMPLE DES DÉLICES",
-      "Description": "Dans l'un des lieux les plus exceptionnels qui aient été construits en dehors de la Chine elle-même, près de 250 personnes peuvent passer à table pour un grand moment d'authenticité.",
-      "Url": "http://www.pairidaiza.eu/cache/im/600x338/uploads/images/4fb9f6c07515b.jpg",
-      "Latitude": "50.583661",
-      "Longitude": "3.8879358",
-      "AttractionType": 1
-    },
+    "Attractions": [
+      {
+        "AttractionID": "b34e9179-5687-4a16-8935-f223c42defcb",
+        "Name": "LE TEMPLE DES DÉLICES",
+        "Description": "Dans l'un des lieux les plus exceptionnels qui aient été construits en dehors de la Chine elle-même, près de 250 personnes peuvent passer à table pour un grand moment d'authenticité.",
+        "Url": "http://www.pairidaiza.eu/cache/im/600x338/uploads/images/4fb9f6c07515b.jpg",
+        "Latitude": "50.583661",
+        "Longitude": "3.8879358",
+        "AttractionType": 1
+      },
       {
         "AttractionID": "205e6f9c-6971-4a6d-bb14-73f8524bb31b",
         "Name": "L'OASIS",
@@ -114,18 +118,20 @@
         "Latitude": "50.5833157",
         "Longitude": "3.8914652",
         "AttractionType": 1
-      }]
+      }
+    ]
   },
   {
     "AreaID": "ba5d9363-532a-4bf3-85bf-bc371278de66",
     "Name": "NOUVEAUTEES 2015",
-    "Attractions": [{
-      "AttractionID": "c9cd65ab-3e1c-44ba-a09c-c784bfb39c53",
-      "Name": "Fourmiliers géant",
-      "Latitude": "50.586377",
-      "Longitude": "3.8843421",
-      "AttractionType": 2
-    },
+    "Attractions": [
+      {
+        "AttractionID": "c9cd65ab-3e1c-44ba-a09c-c784bfb39c53",
+        "Name": "Fourmiliers géant",
+        "Latitude": "50.586377",
+        "Longitude": "3.8843421",
+        "AttractionType": 2
+      },
       {
         "AttractionID": "6f1a767c-2bdc-4aee-8414-79b50081c4a3",
         "Name": "Wombats",
@@ -146,9 +152,11 @@
         "Latitude": "50.5865654",
         "Longitude": "3.8850035",
         "AttractionType": 2
-      }]
+      }
+    ]
   },
   {
     "AreaID": "dcf4e17d-9706-4c18-941d-40e96543fa39",
     "Name": "LA VALLÉE DE LA SOURCE"
-  }]
+  }
+]
