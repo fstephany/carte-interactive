@@ -37,8 +37,8 @@
         "Name": "L'OASIS",
         "Description": "L'espace réservé au restaurant «self-service», déjà remis à neuf en 2010, est encore plus raffiné. On y retrouve une cuisine traditionnelle belge de plats cuisinés, de grillades et de pâtes. Toutes les recettes sont élaborées par le Traiteur Paulus.",
         "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
-        "Latitude": "50.5856025",
-        "Longitude": "3.8831239",
+        "Latitude": "50.5855068",
+        "Longitude": "3.8909245",
         "AttractionType" : 1
       },
       {
@@ -55,8 +55,8 @@
         "Name": "L'ORANGERIE",
         "Description": "L'orangerie vous propose une série de menu hamburgers et salades que vous pourrez savourez dans nos immense aire de pick-nick couverte.",
         "Url": "",
-        "Latitude": "50.5856025",
-        "Longitude": "3.8831239",
+        "Latitude": "50.5829159",
+        "Longitude": "3.8912531",
         "AttractionType" : 1
       },
       {
@@ -64,8 +64,8 @@
         "Name": "LE BATEAU (MERSUS EMERGO)",
         "Description": "Choix de sandwiches, pâtes et pains chauds",
         "Url": "",
-        "Latitude": "50.5856025",
-        "Longitude": "3.8831239",
+        "Latitude": "50.5833157",
+        "Longitude": "3.8914652",
         "AttractionType" : 1
       }]
   },
