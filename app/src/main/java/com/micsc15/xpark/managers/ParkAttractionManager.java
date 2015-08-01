@@ -13,8 +13,9 @@ import com.micsc15.xpark.models.enums.AttractionType;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.UUID;
 
-public class MapManager {
+public class ParkAttractionManager {
 
     // -------------- Objects, Variables -------------- //
 
@@ -22,7 +23,7 @@ public class MapManager {
 
     // --------------- Public Methods ----------------- //
 
-    public static ArrayList<ParkAttraction> GetMapPins(Context context) {
+    public static ArrayList<ParkAttraction> getParkAttractions(Context context) {
         ArrayList<ParkAttraction> pins = new ArrayList<ParkAttraction>();
 
         for (ParkArea area : GetAttractionsPin(context)) {
@@ -34,7 +35,7 @@ public class MapManager {
         return pins;
     }
 
-    public static ArrayList<ParkAttraction> GetMapPins(Context context, int type) {
+    public static ArrayList<ParkAttraction> getParkAttractions(Context context, int type) {
         ArrayList<ParkAttraction> pins = new ArrayList<ParkAttraction>();
 
         for (ParkArea area : GetAttractionsPin(context)) {
@@ -47,6 +48,22 @@ public class MapManager {
         }
 
         return pins;
+    }
+
+    public static ParkAttraction getParkAttraction(UUID attractionID){
+        ParkAttraction attraction = null;
+
+        for (ParkArea area : ParkAreas) {
+            if(area.Attractions != null){
+                for (ParkAttraction attr: area.Attractions) {
+                    if(attr.AttractionID == attractionID){
+                        attraction = attr;
+                    }
+                }
+            }
+        }
+
+        return attraction;
     }
 
     // --------------- Private Methods ---------------- //
