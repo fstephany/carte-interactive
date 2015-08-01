@@ -5,9 +5,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.mapbox.mapboxsdk.geometry.LatLng;
+import com.mapbox.mapboxsdk.overlay.Icon;
+import com.mapbox.mapboxsdk.overlay.Marker;
+import com.mapbox.mapboxsdk.views.InfoWindow;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
+import com.micsc15.xpark.managers.MapManager;
 import com.micsc15.xpark.managers.PairiDaizaManager;
+import com.micsc15.xpark.models.maps.Pin;
 
 public class MapActivity extends BaseActivity {
 
@@ -40,6 +46,13 @@ public class MapActivity extends BaseActivity {
     // ------------------- Methods -------------------- //
 
     private void drawMarkers(){
+        for (Pin pin : MapManager.GetMapPins()){
+            Marker marker = new Marker(mapView, "title", "description", new LatLng(pin.Latitude, pin.Longitude));
+            marker.setImage(getResources().getDrawable(R.drawable.ic_launcher));
+            marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
+            marker.setToolTip(new InfoWindow(R.layout.map_info_window, mapView));
+            mapView.addMarker(marker);
+        }
 //        Marker marker = new Marker(mapView, "title", "description", new LatLng(PairiDaizaManager.iLatLng.getLatitude(), PairiDaizaManager.iLatLng.getLongitude()));
 //        marker.setImage(getResources().getDrawable(R.drawable.ic_launcher));
 //        marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
