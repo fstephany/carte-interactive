@@ -111,6 +111,7 @@ public class MapActivity extends BaseActivity implements View.OnClickListener, G
             googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(PairiDaizaManager.latLng, 17));
             googleMap.setInfoWindowAdapter(this);
             googleMap.setOnInfoWindowClickListener(this);
+            googleMap.setMyLocationEnabled(true);
         }
 
         drawMarkers(null);
