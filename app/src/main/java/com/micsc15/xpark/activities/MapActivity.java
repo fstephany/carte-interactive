@@ -81,9 +81,8 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
     private void drawMarkers(AttractionType attractionType) {
         mapView.clear();
 
-        for (ParkAttraction attraction : attractionType != null ? MapManager.GetMapPins(getBaseContext(), attractionType) : MapManager.GetMapPins(getBaseContext())) {
-            CustomMarker marker = new CustomMarker(mapView, attraction);
-            marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
+        for (ParkAttraction attraction : attractionType != null ? MapManager.GetMapPins(getBaseContext(),  attractionType.ordinal()) : MapManager.GetMapPins(getBaseContext())) {
+            CustomMarker marker = new CustomMarker(getResources(), mapView, attraction);
             mapView.addMarker(marker);
         }
     }

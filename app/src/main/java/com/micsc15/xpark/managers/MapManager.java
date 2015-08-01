@@ -34,7 +34,7 @@ public class MapManager {
         return pins;
     }
 
-    public static ArrayList<ParkAttraction> GetMapPins(Context context, AttractionType type) {
+    public static ArrayList<ParkAttraction> GetMapPins(Context context, int type) {
         ArrayList<ParkAttraction> pins = new ArrayList<ParkAttraction>();
 
         for (ParkArea area : GetAttractionsPin(context)) {

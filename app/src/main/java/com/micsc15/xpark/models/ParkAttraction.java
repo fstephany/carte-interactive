@@ -15,7 +15,7 @@ public class ParkAttraction {
     public String Name;
     public double Latitude;
     public double Longitude;
-    public AttractionType AttractionType;
+    public int AttractionType;
 
     // ------------------ Constructor ----------------- //
 
