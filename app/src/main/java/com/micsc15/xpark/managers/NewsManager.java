@@ -52,6 +52,7 @@ public class NewsManager {
                 }
                 newsSchema.ImageUrl = ConvertImageUrlFromParameter(graphData.picture);
                 newsSchema.FeedUrl = graphData.link;
+                result.add(newsSchema);
             }
         }
 
