@@ -17,6 +17,7 @@ import com.micsc15.xpark.activities.helpers.CustomMarker;
 import com.micsc15.xpark.managers.MapManager;
 import com.micsc15.xpark.managers.PairiDaizaManager;
 import com.micsc15.xpark.models.ParkAttraction;
+import com.micsc15.xpark.models.enums.AttractionType;
 
 public class MapActivity extends BaseActivity implements View.OnClickListener {
 
@@ -54,7 +55,7 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
         floatingActionsMenu = (FloatingActionsMenu) findViewById(R.id.floatingActionsMenu);
 
-        drawMarkers();
+        drawMarkers(null);
     }
 
 
@@ -62,9 +63,14 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v == fab_FilterAll) {
-            drawMarkers();
-        }
+        if (v == fab_FilterAll)
+            drawMarkers(null);
+        else if (v == fab_FilterAnimationsAndFeed)
+            drawMarkers(AttractionType.ATTRACTION);
+        else if (v == fab_FilterEat)
+            drawMarkers(AttractionType.RESTAURANT);
+        else if ( v == fab_FilterNews2015)
+            drawMarkers(null);
 
         floatingActionsMenu.collapse();
     }
@@ -72,10 +78,10 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
 
     // ------------------- Methods -------------------- //
 
-    private void drawMarkers() {
+    private void drawMarkers(AttractionType attractionType) {
         mapView.clear();
 
-        for (ParkAttraction attraction : MapManager.GetMapPins(getBaseContext())) {
+        for (ParkAttraction attraction : attractionType != null ? MapManager.GetMapPins(getBaseContext(), attractionType) : MapManager.GetMapPins(getBaseContext())) {
             CustomMarker marker = new CustomMarker(mapView, attraction);
             marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
             mapView.addMarker(marker);
