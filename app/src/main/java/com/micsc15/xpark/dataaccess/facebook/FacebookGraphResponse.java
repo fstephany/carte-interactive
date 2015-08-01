@@ -6,5 +6,6 @@ package com.micsc15.xpark.dataaccess.facebook;
 public class FacebookGraphResponse {
 
     public GraphData[] data;
+    public Paging paging;
 
 }

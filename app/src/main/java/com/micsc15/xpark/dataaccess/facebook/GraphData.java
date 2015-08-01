@@ -10,8 +10,8 @@ public class GraphData {
         public String id;
         public From from;
         public String type;
-//        public Long created_time;
-//        public Long updated_time;
+        public Date created_time;
+        public Date updated_time;
         public String message;
         public String story;
         public String picture;

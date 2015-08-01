@@ -72,9 +72,9 @@ public class FacebookDataProvider {
             // Convert the InputStream into a string
             String contentAsString = readIt(inputStream);
 
-            Log.e("Facebook", contentAsString);
-
+            // convert json string to object
             GsonBuilder gsonBuilder = new GsonBuilder();
+            gsonBuilder.setDateFormat("yyyy-MM-dd'T'HH:mm:ssz");
             Gson gson = gsonBuilder.create();
 
             return gson.fromJson(contentAsString, FacebookGraphResponse.class);
