@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.dataaccess.facebook.FacebookDataProvider;
+import com.micsc15.xpark.dataaccess.facebook.FacebookGraphResponse;
 
 import java.io.IOException;
 
@@ -25,7 +26,7 @@ public class NewsManager {
                 baseContext.getString(R.string.Facebook_AppID), baseContext.getString(R.string.Facebook_AppSecret));
     }
 
-    public String Load() throws IOException {
+    public FacebookGraphResponse Load() throws IOException {
         return _facebookDataProvider.Load();
     }
 

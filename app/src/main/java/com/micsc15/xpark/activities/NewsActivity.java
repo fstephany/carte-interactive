@@ -9,7 +9,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.micsc15.xpark.R;
+import com.micsc15.xpark.dataaccess.facebook.FacebookGraphResponse;
 import com.micsc15.xpark.managers.NewsManager;
 
 import java.io.IOException;
@@ -76,7 +78,8 @@ public class NewsActivity extends BaseActivity {
         @Override
         protected String doInBackground(Void... params) {
             try {
-                return _newsManager.Load();
+                FacebookGraphResponse response = _newsManager.Load();
+                return response.toString();
             } catch (IOException e) {
                 return "Unable to retrieve web page. URL may be invalid.";
             }

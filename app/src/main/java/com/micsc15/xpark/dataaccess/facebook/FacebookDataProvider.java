@@ -1,5 +1,10 @@
 package com.micsc15.xpark.dataaccess.facebook;
 
+import android.util.Log;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,7 +44,7 @@ public class FacebookDataProvider {
 
     // -------------- Public Methods -------------- //
 
-    public String Load() throws IOException {
+    public FacebookGraphResponse Load() throws IOException {
         return downloadUrl(getPageUrl());
     }
 
@@ -49,7 +54,7 @@ public class FacebookDataProvider {
     // Given a URL, establishes an HttpUrlConnection and retrieves
     // the web page content as a InputStream, which it returns as
     // a string.
-    private String downloadUrl(String myurl) throws IOException {
+    private FacebookGraphResponse downloadUrl(String myurl) throws IOException {
         InputStream inputStream = null;
         try {
             URL url = new URL(myurl);
@@ -66,7 +71,13 @@ public class FacebookDataProvider {
 
             // Convert the InputStream into a string
             String contentAsString = readIt(inputStream);
-            return contentAsString;
+
+            Log.e("Facebook", contentAsString);
+
+            GsonBuilder gsonBuilder = new GsonBuilder();
+            Gson gson = gsonBuilder.create();
+
+            return gson.fromJson(contentAsString, FacebookGraphResponse.class);
         } finally {
             // Makes sure that the InputStream is closed after the app is
             // finished using it.
