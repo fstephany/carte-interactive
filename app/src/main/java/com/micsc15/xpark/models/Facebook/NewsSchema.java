@@ -13,7 +13,7 @@ public class NewsSchema {
     public String Author;
     public String Title;
     public String Content;
-    public Uri ImageUri;
+    public String ImageUrl;
     public String FeedUrl;
     public Date PublishDate;
 
