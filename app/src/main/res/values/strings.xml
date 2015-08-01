@@ -1,4 +1,4 @@
-<resources>
+﻿<resources>
 
     <string name="app_name">Pairi Daiza</string>
 
@@ -12,5 +12,9 @@
 
     <string name="news">Actualités</string>
     <string name="title_activity_maps">Map</string>
+    <string name="fab_FilterAll">Tout montrer</string>
+    <string name="fab_FilterNews2015">Nouveautés 2015</string>
+    <string name="fab_FilterEat">Manger et boire</string>
+    <string name="fab_FilterAnimationsAndFeed">Animations et nourrissage</string>
 
 </resources>
