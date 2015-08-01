@@ -40,7 +40,7 @@ public class CustomInfoWindow extends InfoWindow {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getView().getContext().startActivity(new Intent(getView().getContext(), ParkAttractionDetailsActivity.class));
+                getView().getContext().startActivity(new Intent(getView().getContext(), ParkAttractionDetailsActivity.class).putExtra(ParkAttractionDetailsActivity.EXTRA_PARK_ATTRACTION_ID, parkAttraction.AttractionID.toString()));
             }
         });
     }
