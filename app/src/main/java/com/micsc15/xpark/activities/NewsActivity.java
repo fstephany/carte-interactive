@@ -24,6 +24,7 @@ import com.micsc15.xpark.managers.NewsManager;
 import com.micsc15.xpark.models.Facebook.NewsSchema;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
@@ -33,7 +34,7 @@ public class NewsActivity extends BaseActivity {
 
     static class ViewHolder {
         public TextView content;
-        //public ImageView image;
+        public TextView datum;
     }
 
     // -------------- Objects, Variables -------------- //
@@ -107,10 +108,11 @@ public class NewsActivity extends BaseActivity {
         }
     }
 
-     private class NewsAdapter extends BaseAdapter {
+    private class NewsAdapter extends BaseAdapter {
 
         private final Activity _context;
         private final ArrayList<NewsSchema> _news;
+        private final SimpleDateFormat _simpleDate = new SimpleDateFormat("dd/MM/yyyy");
 
         public NewsAdapter(Activity context, ArrayList<NewsSchema> news) {
             _context = context;
@@ -146,7 +148,8 @@ public class NewsActivity extends BaseActivity {
                 // configure view holder
                 ViewHolder viewHolder = new ViewHolder();
                 viewHolder.content = (TextView) rowView.findViewById(R.id.content);
-
+                viewHolder.datum = (TextView) rowView.findViewById(R.id.datum)
+                ;
                 rowView.setTag(viewHolder);
             }
 
@@ -154,6 +157,7 @@ public class NewsActivity extends BaseActivity {
             ViewHolder holder = (ViewHolder) rowView.getTag();
             NewsSchema news = _news.get(position);
             holder.content.setText(news.Content);
+            holder.datum.setText(_simpleDate.format(news.PublishDate));
 
             return rowView;
         }

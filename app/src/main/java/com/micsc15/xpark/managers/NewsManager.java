@@ -44,11 +44,12 @@ public class NewsManager {
                 newsSchema.Id = graphData.id;
                 newsSchema.Author = graphData.from.name;
                 newsSchema.PublishDate = graphData.created_time;
-                if(!TextUtils.isEmpty(graphData.story)) {
-                    newsSchema.Title = Html.escapeHtml(graphData.story);
+                if (!TextUtils.isEmpty(graphData.story)) {
+                    newsSchema.Title = Html.fromHtml(graphData.story).toString();
                 }
-                if(!TextUtils.isEmpty(graphData.message)) {
-                    newsSchema.Content = Html.escapeHtml(graphData.message);
+                if (!TextUtils.isEmpty(graphData.message)) {
+                    String message = graphData.message.replace("\n", "<br />");
+                    newsSchema.Content = Html.fromHtml(message).toString();
                 }
                 newsSchema.ImageUrl = ConvertImageUrlFromParameter(graphData.picture);
                 newsSchema.FeedUrl = graphData.link;
@@ -64,12 +65,11 @@ public class NewsManager {
         try {
             if (!TextUtils.isEmpty(imageUrl)) {
                 if (imageUrl.contains("url=")) {
-
                     Uri imageUri = Uri.parse(imageUrl);
                     String url = imageUri.getQueryParameter("url");
                     parsedImageUrl = Uri.decode(url);
                 } else {
-                    parsedImageUrl = Html.escapeHtml(imageUrl);
+                    parsedImageUrl = Html.fromHtml(imageUrl).toString();
                 }
             }
         } catch (Exception e) {
