@@ -1,34 +1,70 @@
 package com.micsc15.xpark.managers;
 
-import com.micsc15.xpark.models.maps.Pin;
+import android.content.Context;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.micsc15.xpark.models.ParkArea;
+import com.micsc15.xpark.models.ParkAttraction;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class MapManager {
 
     // -------------- Objects, Variables -------------- //
 
+    public static ArrayList<ParkArea> ParkAreas;
 
     // --------------- Public Methods ----------------- //
 
-    public static ArrayList<Pin> GetMapPins(){
-        ArrayList<Pin> pins = new ArrayList<Pin>();
-        pins.addAll(GetAttractionsPin());
+    public static ArrayList<ParkAttraction> GetMapPins(Context context) {
+        ArrayList<ParkAttraction> pins = new ArrayList<ParkAttraction>();
+
+        for (ParkArea area : GetAttractionsPin(context)) {
+            if(area.Attractions != null){
+                pins.addAll(area.Attractions);
+            }
+        }
+
         return pins;
     }
 
     // --------------- Private Methods ---------------- //
 
-    private static ArrayList<Pin> GetAttractionsPin(){
-        ArrayList<Pin> pins = new ArrayList<Pin>();
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 50.5856025,3.8831239));
-        pins.add(new Pin(UUID.randomUUID(), "https://openclipart.org/image/800px/svg_to_png/169839/map-pin.png", 50.583661,3.8879358));
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 50.5856025,3.8831239));
-        pins.add(new Pin(UUID.randomUUID(), "http://www.clker.com/cliparts/n/T/j/m/1/z/map-pin-green-hi.png", 50.583661,3.8879358));
+    private static ArrayList<ParkArea> GetAttractionsPin(Context context) {
+        if (ParkAreas != null) {
+            return ParkAreas;
+        } else {
+            ParkAreas = new ArrayList<ParkArea>();
+            String json = null;
+            Gson gson = new Gson();
 
-        return pins;
+            try {
+                InputStream is = context.getAssets().open("map.json");
+
+                int size = is.available();
+                byte[] buffer = new byte[size];
+
+                is.read(buffer);
+                is.close();
+
+                json = new String(buffer, "UTF-8");
+                JsonParser parser = new JsonParser();
+                JsonArray jArray = parser.parse(json).getAsJsonArray();
+
+                for (JsonElement jsonObj : jArray) {
+                    ParkArea area = gson.fromJson(jsonObj, ParkArea.class);
+                    ParkAreas.add(area);
+                }
+                return ParkAreas;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+                return null;
+            }
+        }
     }
-
-    // ----------------- Miscellaneous ---------------- //
-
 }

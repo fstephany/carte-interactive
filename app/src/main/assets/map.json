@@ -1,0 +1,68 @@
+[{
+  "AreaID": "282c05f1-2dfa-4e25-a002-9cfd8939c038",
+  "Name": "LA LAGUNE",
+  "Attractions": [{
+    "Name": "LE VILLAGE DES RAPACES",
+    "Description": "bla bla bla",
+    "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fb113327ff2c.jpg",
+    "Latitude": "50.583661",
+    "Longitude": "3.8879358",
+    "AttractionType" : 0
+  },
+    {
+      "Name": "LES TAPIRS",
+      "Description": "bla bla bla",
+      "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
+      "Latitude": "50.5856025",
+      "Longitude": "3.8831239",
+      "AttractionType" : 0
+    }]
+},
+  {
+    "AreaID": "ba5d9363-532a-4bf3-85bf-bc371278de66",
+    "Name": "RESTAURANT",
+    "Attractions": [{
+      "Name": "LE TEMPLE DES DÉLICES",
+      "Description": "Dans l'un des lieux les plus exceptionnels qui aient été construits en dehors de la Chine elle-même, près de 250 personnes peuvent passer à table pour un grand moment d'authenticité.",
+      "Url": "http://www.pairidaiza.eu/cache/im/600x338/uploads/images/4fb9f6c07515b.jpg",
+      "Latitude": "50.583661",
+      "Longitude": "3.8879358",
+      "AttractionType" : 1
+    },
+      {
+        "Name": "L'OASIS",
+        "Description": "L'espace réservé au restaurant «self-service», déjà remis à neuf en 2010, est encore plus raffiné. On y retrouve une cuisine traditionnelle belge de plats cuisinés, de grillades et de pâtes. Toutes les recettes sont élaborées par le Traiteur Paulus.",
+        "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
+        "Latitude": "50.5856025",
+        "Longitude": "3.8831239",
+        "AttractionType" : 1
+      },
+      {
+        "Name": "LE MOULIN (EN TERRASSE OU À EMPORTER)",
+        "Description": "Vous trouvez dans ce point de restauration des snacks «nature» qui fait partie des nouvelles tendances «Food Fashion». Un lieu plutôt destiné à ceux pour qui le raffinement naturel alimentaire est primordial..",
+        "Url": "http://www.pairidaiza.eu/cache/im/600x338/uploads/images/4fb9fa54d9d25.jpg",
+        "Latitude": "50.5856025",
+        "Longitude": "3.8831239",
+        "AttractionType" : 1
+      },
+      {
+        "Name": "L'ORANGERIE",
+        "Description": "L'orangerie vous propose une série de menu hamburgers et salades que vous pourrez savourez dans nos immense aire de pick-nick couverte.",
+        "Url": "",
+        "Latitude": "50.5856025",
+        "Longitude": "3.8831239",
+        "AttractionType" : 1
+      },
+      {
+        "Name": "LE BATEAU (MERSUS EMERGO)",
+        "Description": "Choix de sandwiches, pâtes et pains chauds",
+        "Url": "",
+        "Latitude": "50.5856025",
+        "Longitude": "3.8831239",
+        "AttractionType" : 1
+      }]
+  },
+  {
+    "AreaID": "dcf4e17d-9706-4c18-941d-40e96543fa39",
+    "Name": "LAVALLÉEDELASOURCE"
+  }]
