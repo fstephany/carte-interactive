@@ -12,6 +12,7 @@ public class ParkAttraction {
 
     public UUID PinID;
     public String ImageUrl;
+    public String Name;
     public double Latitude;
     public double Longitude;
     public AttractionType AttractionType;
