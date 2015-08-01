@@ -11,7 +11,7 @@ public class ParkArea {
 
     public String Name;
     public String Description;
-    public string ImageUrl;
+    public String ImageUrl;
     public UUID AreaID;
     public ArrayList<ParkAttraction> Attractions;
 
