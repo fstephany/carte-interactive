@@ -7,14 +7,12 @@ import java.util.Date;
  */
 public class GraphData {
 
-        public String id;
-        public From from;
-        public String type;
-        public Date created_time;
-        public Date updated_time;
-        public String message;
-        public String story;
-        public String picture;
-        public String link;
+    public String id;
+    public From from;
+    public String message;
+    public String story;
+    public String picture;
+    public String link;
+    public Date created_time;
 
 }

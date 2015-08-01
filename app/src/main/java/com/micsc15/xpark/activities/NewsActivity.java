@@ -6,6 +6,7 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,8 +14,10 @@ import com.google.gson.Gson;
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.dataaccess.facebook.FacebookGraphResponse;
 import com.micsc15.xpark.managers.NewsManager;
+import com.micsc15.xpark.models.Facebook.NewsSchema;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by fd on 31-07-15.
@@ -27,8 +30,7 @@ public class NewsActivity extends BaseActivity {
 
     // --------------------- Views -------------------- //
 
-    EditText etResponse;
-    TextView tvIsConnected;
+    ListView lvNews;
 
 
     // ------------------ LifeCycle ------------------- //
@@ -39,21 +41,15 @@ public class NewsActivity extends BaseActivity {
         setContentView(R.layout.activity_news);
 
         // get reference to the views
-        etResponse = (EditText) findViewById(R.id.etResponse);
-        tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
+        lvNews = (ListView) findViewById(R.id.lvNews);
 
         // init members
         _newsManager = new NewsManager(getBaseContext());
 
         // check if you are connected or not
         if (isConnected()) {
-            tvIsConnected.setBackgroundColor(0xFF00CC00);
-            tvIsConnected.setText("You are connected");
-
             // call AsyncTask to perform network operation on separate thread
             new NewsAsyncTask().execute();
-        } else {
-            tvIsConnected.setText("You are NOT connected");
         }
     }
 
@@ -73,22 +69,21 @@ public class NewsActivity extends BaseActivity {
         }
     }
 
-    private class NewsAsyncTask extends AsyncTask<Void, String, String> {
+    private class NewsAsyncTask extends AsyncTask<Void, ArrayList<NewsSchema>, ArrayList<NewsSchema>> {
 
         @Override
-        protected String doInBackground(Void... params) {
+        protected ArrayList<NewsSchema> doInBackground(Void... params) {
             try {
-                FacebookGraphResponse response = _newsManager.Load();
-                return response.toString();
+                return _newsManager.Load();
             } catch (IOException e) {
-                return "Unable to retrieve web page. URL may be invalid.";
+                return null;
             }
         }
 
         @Override
-        protected void onPostExecute(String result) {
-            Toast.makeText(getBaseContext(), "Received!", Toast.LENGTH_LONG).show();
-            etResponse.setText(result);
+        protected void onPostExecute(ArrayList<NewsSchema> news) {
+            //todo
+
         }
     }
 
