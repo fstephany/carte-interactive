@@ -2,6 +2,7 @@
   "AreaID": "282c05f1-2dfa-4e25-a002-9cfd8939c038",
   "Name": "LA LAGUNE",
   "Attractions": [{
+    "AttractionID":"583a5447-4263-45e6-b21b-4417bcb1c084",
     "Name": "LE VILLAGE DES RAPACES",
     "Description": "bla bla bla",
     "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fb113327ff2c.jpg",
@@ -10,6 +11,7 @@
     "AttractionType" : 0
   },
     {
+      "AttractionID":"f789633e-a59b-4afb-9a78-193a700ae9e1",
       "Name": "LESTAPIRS",
       "Description": "bla bla bla",
       "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
@@ -22,6 +24,7 @@
     "AreaID": "ba5d9363-532a-4bf3-85bf-bc371278de66",
     "Name": "RESTAURANT",
     "Attractions": [{
+      "AttractionID":"b34e9179-5687-4a16-8935-f223c42defcb",
       "Name": "LE TEMPLE DES DÉLICES",
       "Description": "Dans l'un des lieux les plus exceptionnels qui aient été construits en dehors de la Chine elle-même, près de 250 personnes peuvent passer à table pour un grand moment d'authenticité.",
       "Url": "http://www.pairidaiza.eu/cache/im/600x338/uploads/images/4fb9f6c07515b.jpg",
@@ -30,6 +33,7 @@
       "AttractionType" : 1
     },
       {
+        "AttractionID":"205e6f9c-6971-4a6d-bb14-73f8524bb31b",
         "Name": "L'OASIS",
         "Description": "L'espace réservé au restaurant «self-service», déjà remis à neuf en 2010, est encore plus raffiné. On y retrouve une cuisine traditionnelle belge de plats cuisinés, de grillades et de pâtes. Toutes les recettes sont élaborées par le Traiteur Paulus.",
         "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
@@ -38,6 +42,7 @@
         "AttractionType" : 1
       },
       {
+        "AttractionID":"f320a679-3534-4bb2-a843-9c4e3c945783",
         "Name": "LE MOULIN (EN TERRASSE OU À EMPORTER)",
         "Description": "Vous trouvez dans ce point de restauration des snacks «nature» qui fait partie des nouvelles tendances «Food Fashion». Un lieu plutôt destiné à ceux pour qui le raffinement naturel alimentaire est primordial..",
         "Url": "http://www.pairidaiza.eu/cache/im/600x338/uploads/images/4fb9fa54d9d25.jpg",
@@ -46,6 +51,7 @@
         "AttractionType" : 1
       },
       {
+        "AttractionID":"3fb2ad39-2beb-40c7-81d9-d8115e8e9089",
         "Name": "L'ORANGERIE",
         "Description": "L'orangerie vous propose une série de menu hamburgers et salades que vous pourrez savourez dans nos immense aire de pick-nick couverte.",
         "Url": "",
@@ -54,6 +60,7 @@
         "AttractionType" : 1
       },
       {
+        "AttractionID":"0d2bfc94-2f10-4dba-bc20-bae033238786",
         "Name": "LE BATEAU (MERSUS EMERGO)",
         "Description": "Choix de sandwiches, pâtes et pains chauds",
         "Url": "",
@@ -66,22 +73,26 @@
     "AreaID": "ba5d9363-532a-4bf3-85bf-bc371278de66",
     "Name": "NOUVEAUTEES 2015",
     "Attractions": [{
+      "AttractionID":"c9cd65ab-3e1c-44ba-a09c-c784bfb39c53",
       "Name": "Fourmiliers géant",
       "Latitude": "50.586377",
       "Longitude": "3.8843421",
       "AttractionType" : 2
     },
       {
+        "AttractionID":"6f1a767c-2bdc-4aee-8414-79b50081c4a3",
         "Name": "Wombats",
         "Latitude": "50.5834073",
         "Longitude": "3.8860458",
         "AttractionType" : 2
       },{
+        "AttractionID":"f52610cd-c1c9-480b-9272-bff93c9168ae",
         "Name": "Pieuvre géante",
         "Latitude": "50.5862609",
         "Longitude": "3.8865268",
         "AttractionType" : 2
       },{
+        "AttractionID":"c7ff1b10-9ebe-454f-ae99-c2061f9142d1",
         "Name": "Rats taupe",
         "Latitude": "50.5865654",
         "Longitude": "3.8850035",
