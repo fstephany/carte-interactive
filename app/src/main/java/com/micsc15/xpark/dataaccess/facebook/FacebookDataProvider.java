@@ -20,7 +20,7 @@ public class FacebookDataProvider {
 
     // -------------- Objects, Variables -------------- //
 
-    private final String _BASE_URL = "https://graph.facebook.com/v2.4";
+    private final String _BASE_URL = "https://graph.facebook.com/v2.2";
     private String _userID;
     private String _appID;
     private String _appSecret;
@@ -29,7 +29,7 @@ public class FacebookDataProvider {
     // -------------- Properties -------------- //
 
     private String getPageUrl() {
-        return String.format("%1$s/%2$s/posts?&access_token=%3$s|%4$s", _BASE_URL, _userID, _appID, _appSecret);
+        return String.format("%1$s/%2$s/posts?limit=100&fields=id,from,message,story,picture,link,created_time&access_token=%3$s|%4$s", _BASE_URL, _userID, _appID, _appSecret);
     }
 
 

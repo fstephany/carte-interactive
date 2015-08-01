@@ -5,7 +5,7 @@ package com.micsc15.xpark.dataaccess.facebook;
  */
 public class Paging {
 
-    private String previous;
-    private String next;
+    public String previous;
+    public String next;
 
 }

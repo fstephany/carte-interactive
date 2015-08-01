@@ -5,8 +5,8 @@ package com.micsc15.xpark.dataaccess.facebook;
  */
 public class From {
 
-    private String name;
-    private String id;
+    public String name;
     public String category;
+    public String id;
 
 }
