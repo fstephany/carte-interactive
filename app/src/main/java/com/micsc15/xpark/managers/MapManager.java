@@ -8,6 +8,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.micsc15.xpark.models.ParkArea;
 import com.micsc15.xpark.models.ParkAttraction;
+import com.micsc15.xpark.models.enums.AttractionType;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,6 +28,21 @@ public class MapManager {
         for (ParkArea area : GetAttractionsPin(context)) {
             if(area.Attractions != null){
                 pins.addAll(area.Attractions);
+            }
+        }
+
+        return pins;
+    }
+
+    public static ArrayList<ParkAttraction> GetMapPins(Context context, AttractionType type) {
+        ArrayList<ParkAttraction> pins = new ArrayList<ParkAttraction>();
+
+        for (ParkArea area : GetAttractionsPin(context)) {
+            if(area.Attractions != null){
+                for (ParkAttraction attraction: area.Attractions) {
+                    if(attraction.AttractionType == type)
+                        pins.add(attraction);
+                }
             }
         }
 
