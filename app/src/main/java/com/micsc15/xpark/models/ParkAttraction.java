@@ -1,5 +1,7 @@
 package com.micsc15.xpark.models;
 
+import com.micsc15.xpark.models.enums.AttractionType;
+
 import java.util.UUID;
 
 public class ParkAttraction {
@@ -12,6 +14,7 @@ public class ParkAttraction {
     public String ImageUrl;
     public double Latitude;
     public double Longitude;
+    public AttractionType AttractionType;
 
     // ------------------ Constructor ----------------- //
 
