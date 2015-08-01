@@ -41,10 +41,15 @@ public class NewsManager {
         for (GraphData graphData : response.data) {
             if (!TextUtils.isEmpty(graphData.message) && !TextUtils.isEmpty(graphData.link)) {
                 NewsSchema newsSchema = new NewsSchema();
+                newsSchema.Id = graphData.id;
                 newsSchema.Author = graphData.from.name;
                 newsSchema.PublishDate = graphData.created_time;
-                newsSchema.Title = Html.escapeHtml(graphData.story);
-                newsSchema.Content = Html.escapeHtml(graphData.message);
+                if(!TextUtils.isEmpty(graphData.story)) {
+                    newsSchema.Title = Html.escapeHtml(graphData.story);
+                }
+                if(!TextUtils.isEmpty(graphData.message)) {
+                    newsSchema.Content = Html.escapeHtml(graphData.message);
+                }
                 newsSchema.ImageUrl = ConvertImageUrlFromParameter(graphData.picture);
                 newsSchema.FeedUrl = graphData.link;
             }
