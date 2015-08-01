@@ -31,21 +31,7 @@ public class PairiDaizaManager {
 
     // --------------- Public Methods ----------------- //
 
-    public static ParkAttraction GetAttractionCard(UUID attractionID){
-        ParkAttraction attraction = null;
 
-        for (ParkArea area : MapManager.ParkAreas) {
-            if(area.Attractions != null){
-                for (ParkAttraction attr: area.Attractions) {
-                    if(attr.AttractionID == attractionID){
-                        attraction = attr;
-                    }
-                }
-            }
-        }
-
-        return attraction;
-    }
 
     // --------------- Private Methods ---------------- //
 
