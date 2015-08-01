@@ -4,19 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.overlay.Icon;
-import com.mapbox.mapboxsdk.overlay.Marker;
-import com.mapbox.mapboxsdk.views.InfoWindow;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
+import com.micsc15.xpark.activities.helpers.CustomMarker;
 import com.micsc15.xpark.managers.MapManager;
 import com.micsc15.xpark.managers.PairiDaizaManager;
 import com.micsc15.xpark.models.ParkArea;
 import com.micsc15.xpark.models.ParkAttraction;
 
-public class MapActivity extends BaseActivity {
+public class MapActivity extends BaseActivity implements View.OnClickListener {
 
     // -------------- Objects, Variables -------------- //
 
@@ -24,6 +27,9 @@ public class MapActivity extends BaseActivity {
     // --------------------- Views -------------------- //
 
     private MapView mapView;
+
+    private FloatingActionsMenu fam;
+    private FloatingActionButton fabA, fabB;
 
 
     // ------------------ LifeCycle ------------------- //
@@ -38,10 +44,26 @@ public class MapActivity extends BaseActivity {
         mapView.setZoom(18);
 
         drawMarkers();
+
+        fabA = (FloatingActionButton) findViewById(R.id.action_a);
+        fabA.setOnClickListener(this);
+
+        fabB = (FloatingActionButton) findViewById(R.id.action_b);
+        fabB.setOnClickListener(this);
+
+        fam = (FloatingActionsMenu) findViewById(R.id.multiple_actions);
     }
 
 
     // ------------------ Listeners ------------------- //
+
+    @Override
+    public void onClick(View v) {
+        if (v == fabA)
+            Toast.makeText(getBaseContext(), "jiojioji", Toast.LENGTH_LONG).show();
+
+        fam.collapse();
+    }
 
 
     // ------------------- Methods -------------------- //
@@ -49,9 +71,7 @@ public class MapActivity extends BaseActivity {
     private void drawMarkers(){
         for (ParkAttraction attraction : MapManager.GetMapPins(getBaseContext())){
             Marker marker = new Marker(mapView, "title", "description", new LatLng(attraction.Latitude, attraction.Longitude));
-            marker.setImage(getResources().getDrawable(R.drawable.ic_launcher));
-            marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
-            marker.setToolTip(new InfoWindow(R.layout.map_info_window, mapView));
+             marker.setIcon(new Icon(getResources().getDrawable(R.drawable.ic_launcher)));
             mapView.addMarker(marker);
         }
     }
@@ -72,7 +92,7 @@ public class MapActivity extends BaseActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case MENU_NEWS:
                 startActivity(new Intent(MapActivity.this, NewsActivity.class));
                 break;
@@ -80,6 +100,7 @@ public class MapActivity extends BaseActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 
     // ----------------- Miscellaneous ---------------- //
 
