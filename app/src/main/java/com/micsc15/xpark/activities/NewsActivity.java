@@ -35,6 +35,7 @@ public class NewsActivity extends BaseActivity {
     static class ViewHolder {
         public TextView content;
         public TextView datum;
+        public ImageView picture;
     }
 
     // -------------- Objects, Variables -------------- //
@@ -148,8 +149,9 @@ public class NewsActivity extends BaseActivity {
                 // configure view holder
                 ViewHolder viewHolder = new ViewHolder();
                 viewHolder.content = (TextView) rowView.findViewById(R.id.content);
-                viewHolder.datum = (TextView) rowView.findViewById(R.id.datum)
-                ;
+                viewHolder.datum = (TextView) rowView.findViewById(R.id.datum);
+                viewHolder.picture = (ImageView) rowView.findViewById(R.id.picture);
+
                 rowView.setTag(viewHolder);
             }
 
@@ -158,6 +160,9 @@ public class NewsActivity extends BaseActivity {
             NewsSchema news = _news.get(position);
             holder.content.setText(news.Content);
             holder.datum.setText(_simpleDate.format(news.PublishDate));
+            if(news.ImageUri != null) {
+                holder.picture.setImageURI(news.ImageUri);
+            }
 
             return rowView;
         }

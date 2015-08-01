@@ -1,5 +1,7 @@
 package com.micsc15.xpark.models.Facebook;
 
+import android.net.Uri;
+
 import java.util.Date;
 
 /**
@@ -11,7 +13,7 @@ public class NewsSchema {
     public String Author;
     public String Title;
     public String Content;
-    public String ImageUrl;
+    public Uri ImageUri;
     public String FeedUrl;
     public Date PublishDate;
 

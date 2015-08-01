@@ -11,7 +11,6 @@ import com.mapbox.mapboxsdk.overlay.Marker;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.models.ParkAttraction;
-import com.micsc15.xpark.models.enums.AttractionType;
 
 public class CustomMarker extends Marker {
 
@@ -24,7 +23,9 @@ public class CustomMarker extends Marker {
 
     public CustomMarker(Resources resources, MapView mapView, ParkAttraction parkAttraction){
         super(mapView, parkAttraction.Name, "", new LatLng(parkAttraction.Latitude, parkAttraction.Longitude));
+
         this.parkAttraction = parkAttraction;
+
         switch(parkAttraction.AttractionType){
             case 0:
             default:
@@ -53,7 +54,7 @@ private Drawable getResizedIcon(Resources resources, Drawable dr){
 
     @Override
     protected CustomInfoWindow createTooltip(MapView mapView) {
-        return new CustomInfoWindow(R.layout.map_info_window, mapView);
+        return new CustomInfoWindow(R.layout.map_info_window, mapView, parkAttraction);
     }
 
 

@@ -10,7 +10,6 @@ import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.mapbox.mapboxsdk.geometry.BoundingBox;
 import com.mapbox.mapboxsdk.geometry.LatLng;
-import com.mapbox.mapboxsdk.overlay.Icon;
 import com.mapbox.mapboxsdk.views.MapView;
 import com.micsc15.xpark.R;
 import com.micsc15.xpark.activities.helpers.CustomMarker;
@@ -86,9 +85,6 @@ public class MapActivity extends BaseActivity implements View.OnClickListener {
             mapView.addMarker(marker);
         }
     }
-
-
-    // ----------------- GUI Adapter ------------------ //
 
 
     // -------------------- Menu ---------------------- //
