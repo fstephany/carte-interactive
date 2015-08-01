@@ -10,7 +10,7 @@
     "AttractionType" : 0
   },
     {
-      "Name": "LES TAPIRS",
+      "Name": "LESTAPIRS",
       "Description": "bla bla bla",
       "Url": "http: //www.pairidaiza.eu/cache/im/activity_banner/uploads/activity_banners/4fc87a94a26d8.jpg",
       "Latitude": "50.5856025",
@@ -62,7 +62,34 @@
         "AttractionType" : 1
       }]
   },
+  ,
+  {
+    "AreaID": "ba5d9363-532a-4bf3-85bf-bc371278de66",
+    "Name": "NOUVEAUTEES 2015",
+    "Attractions": [{
+      "Name": "Fourmiliers géant",
+      "Latitude": "50.586377",
+      "Longitude": "3.8843421",
+      "AttractionType" : 2
+    },
+      {
+        "Name": "Wombats",
+        "Latitude": "50.5834073",
+        "Longitude": "3.8860458",
+        "AttractionType" : 2
+      },{
+        "Name": "Pieuvre géante",
+        "Latitude": "50.5862609",
+        "Longitude": "3.8865268",
+        "AttractionType" : 2
+      },{
+        "Name": "Rats taupe",
+        "Latitude": "50.5865654",
+        "Longitude": "3.8850035",
+        "AttractionType" : 2
+      }]
+  },
   {
     "AreaID": "dcf4e17d-9706-4c18-941d-40e96543fa39",
-    "Name": "LAVALLÉEDELASOURCE"
+    "Name": "LA VALLÉE DE LA SOURCE"
   }]

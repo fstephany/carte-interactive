@@ -14,7 +14,7 @@
         mapbox:mapid="uxmaster.bf6cd864"/>
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/multiple_actions"
+        android:id="@+id/floatingActionsMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -44,7 +44,6 @@
             fab:fab_colorPressed="@color/white_pressed"
             fab:fab_icon="@drawable/ic_fab_star"
             fab:fab_title="Nouveautés 2015"/>
-
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_FilterEat"
