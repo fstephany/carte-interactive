@@ -24,7 +24,7 @@ public class ParkAttractionDetailsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
 
         ParkAttraction attraction = ParkAttractionManager.getParkAttraction(UUID.fromString(getIntent().getStringExtra(EXTRA_PARK_ATTRACTION_ID)));
-        
+
     }
 
 
