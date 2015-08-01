@@ -16,13 +16,12 @@
                   android:orientation="vertical"
                   android:padding="10dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/profile_image"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="96dp"
+            android:layout_marginBottom="10dp"
             android:layout_height="96dp"
-            app:border_color="#FF000000"
-            app:border_width="2dp"/>
+            android:src="@drawable/lemurien"/>
 
         <TextView
             android:id="@+id/textView_Title"
