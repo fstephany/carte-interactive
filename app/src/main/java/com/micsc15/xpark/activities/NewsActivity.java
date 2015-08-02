@@ -15,6 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,7 +47,8 @@ public class NewsActivity extends BaseActivity {
 
     // --------------------- Views -------------------- //
 
-    ListView listNews;
+    private ListView _listNews;
+    private ProgressBar _pbHeaderProgress;
 
 
     // ------------------ LifeCycle ------------------- //
@@ -59,7 +61,8 @@ public class NewsActivity extends BaseActivity {
         setTitle(R.string.news);
 
         // get reference to the views
-        listNews = (ListView) findViewById(R.id.listNews);
+        _listNews = (ListView) findViewById(R.id.listNews);
+        _pbHeaderProgress = (ProgressBar) findViewById(R.id.pbHeaderProgress);
 
         // init members
         _newsManager = new NewsManager(getBaseContext());
@@ -67,6 +70,7 @@ public class NewsActivity extends BaseActivity {
         // check if you are connected or not
         if (isConnected()) {
             // call AsyncTask to perform network operation on separate thread
+            _pbHeaderProgress.setVisibility(View.VISIBLE);
             new NewsAsyncTask(this).execute();
         }
     }
@@ -107,7 +111,8 @@ public class NewsActivity extends BaseActivity {
         @Override
         protected void onPostExecute(ArrayList<NewsSchema> news) {
             NewsAdapter adapter = new NewsAdapter(_context, news);
-            listNews.setAdapter(adapter);
+            _listNews.setAdapter(adapter);
+            _pbHeaderProgress.setVisibility(View.GONE);
         }
     }
 

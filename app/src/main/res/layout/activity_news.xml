@@ -6,21 +6,19 @@
 
     <ListView
         android:id="@+id/listNews"
-        android:background="#333"
         android:layout_width="match_parent"
         android:layout_height="fill_parent">
-
-
     </ListView>
-
 
     <ProgressBar
         android:id="@+id/pbHeaderProgress"
         style="@android:style/Widget.ProgressBar.Large"
-        android:gravity = "center_vertical|center_horizontal"
         android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content">
-
     </ProgressBar>
 
 </RelativeLayout>
