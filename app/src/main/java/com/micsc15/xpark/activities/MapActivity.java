@@ -44,7 +44,6 @@ public class MapActivity extends BaseActivity implements View.OnClickListener, G
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-
         setUpMap();
 
         fab_FilterAll = (FloatingActionButton) findViewById(R.id.fab_FilterAll);
@@ -108,7 +107,7 @@ public class MapActivity extends BaseActivity implements View.OnClickListener, G
     private void setUpMap() {
         if (googleMap == null) {
             googleMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
-            if(googleMap == null) {
+            if (googleMap == null) {
                 // google map not available
                 return;
             }
@@ -129,11 +128,11 @@ public class MapActivity extends BaseActivity implements View.OnClickListener, G
             for (ParkAttraction attraction : attractionType != null ? ParkAttractionManager.getParkAttractions(getBaseContext(), attractionType.ordinal()) : ParkAttractionManager.getParkAttractions(getBaseContext())) {
 
                 int iconResourceId = 0;
-                if(attraction.AttractionType == 0)
+                if (attraction.AttractionType == 0)
                     iconResourceId = R.drawable.animal_pin;
-                else if(attraction.AttractionType == 1)
+                else if (attraction.AttractionType == 1)
                     iconResourceId = R.drawable.food_pin;
-                else if(attraction.AttractionType == 2)
+                else if (attraction.AttractionType == 2)
                     iconResourceId = R.drawable.news_pin;
 
                 Marker marker = googleMap.addMarker(new MarkerOptions()
