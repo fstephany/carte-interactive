@@ -19,7 +19,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        startActivity(new Intent(SplashActivity.this, MapActivity.class));
+        startActivity(new Intent(SplashActivity.this, NavigationActivity.class));
         finish();
     }
 
