@@ -108,6 +108,10 @@ public class MapActivity extends BaseActivity implements View.OnClickListener, G
     private void setUpMap() {
         if (googleMap == null) {
             googleMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
+            if(googleMap == null) {
+                // google map not available
+                return;
+            }
             googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(PairiDaizaManager.latLng, 17));
             googleMap.setInfoWindowAdapter(this);
             googleMap.setOnInfoWindowClickListener(this);
