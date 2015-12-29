@@ -17,6 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        xpark_Flavor1 {
+            applicationId "com.micsc15.xpark"
+        }
+        xpark_Flavor2 {
+            applicationId "com.micsc15.xpark2"
+        }
+    }
 }
 
 
