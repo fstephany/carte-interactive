@@ -12,5 +12,5 @@ notifications:
   slack: myshopi:6TmzDv6pWANrhE05ZqL6pJBa
 
 after_success:
-  - ./gradlewcrashlyticsUploadXpark_Flavor1Debug
-  - ./gradlewcrashlyticsUploadXpark_Flavor2Debug
+  - ./gradlew crashlyticsUploadXpark_Flavor1Debug
+  - ./gradlew crashlyticsUploadXpark_Flavor2Debug
