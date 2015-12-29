@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical"
+                  android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="96dp"
+            android:src="@drawable/lemurien"/>
+
+        <TextView
+            android:id="@+id/textView_Title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Nourissage lémuriens"
+            android:textColor="#d94a4a"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textView_NextFeed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Prochain nourissage: 16h"/>
+
+        <Button
+            android:id="@+id/bt_Details"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Details"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView><!-- From: file:/Users/fstephany/Desktop/TEST-CI/carte-interactive/app/src/main/res/layout/map_info_window.xml -->

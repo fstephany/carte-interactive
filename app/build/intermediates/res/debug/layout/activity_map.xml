@@ -1,0 +1,89 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:fab="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapActivity">
+
+
+        <fragment android:id="@+id/map"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  tools:context="com.micsc15.xpark.activities.MapsActivity"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/floatingActionsMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="14dp"
+            fab:fab_addButtonColorNormal="@color/colorPrimary"
+            fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+            fab:fab_addButtonPlusIconColor="@color/white"
+            fab:fab_labelStyle="@style/menu_labels_style">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_FilterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#333333"
+                fab:fab_colorPressed="#434343"
+                fab:fab_icon="@drawable/eye_icon"
+                fab:fab_title="@string/fab_FilterAll"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_FilterNews2015"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#4BDA8A"
+                fab:fab_colorPressed="#5BEA9A"
+                fab:fab_icon="@drawable/new_icon"
+                fab:fab_title="@string/fab_FilterNews2015"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_FilterEat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#469ED9"
+                fab:fab_colorPressed="#56AEE9"
+                fab:fab_icon="@drawable/food_icon"
+                fab:fab_title="@string/fab_FilterEat"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_FilterAnimationsAndFeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#D94646"
+                fab:fab_colorPressed="#E95656"
+                fab:fab_icon="@drawable/claw_icon"
+                fab:fab_title="@string/fab_FilterAnimationsAndFeed"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_NavigationDrawer"
+        android:layout_width="284dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/fstephany/Desktop/TEST-CI/carte-interactive/app/src/main/res/layout/activity_map.xml -->
