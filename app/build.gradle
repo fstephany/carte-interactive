@@ -36,6 +36,14 @@ android {
 
     lintOptions {
         abortOnError false
+
+    productFlavors {
+        xpark_Flavor1 {
+            applicationId "com.micsc15.xpark"
+        }
+        xpark_Flavor2 {
+            applicationId "com.micsc15.xpark2"
+        }
     }
 }
 
@@ -48,8 +56,9 @@ dependencies {
     compile 'com.google.android.gms:play-services:7.5.0'
     compile 'com.android.support:cardview-v7:22.+'
     compile 'com.squareup.picasso:picasso:2.3.3'
-
     compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
         transitive = true;
     }
+
+    testCompile 'junit:junit:4.12'
 }
